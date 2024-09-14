@@ -1,23 +1,40 @@
-# .dotfiles-arch/nvim/.config/nvim
+# nvim
 
 <a href="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim"><img src="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim"><img src="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim/badges/plugin-manager?style=flat" /></a>
 
 ## Install Instructions
 
-> Install requires Neovim 0.9+. Always review the code before installing a configuration.
+> Install requires [neovim](https://github.com/neovim/neovim) 0.9+. Always review the code before installing a configuration.
+
+Backup your existing config:
+
+```sh
+# required
+mv ~/.config/nvim{,.bak}
+
+# optional but recommended
+mv ~/.local/share/nvim{,.bak}
+mv ~/.local/state/nvim{,.bak}
+mv ~/.cache/nvim{,.bak}
+```
 
 Clone the repository and install the plugins:
 
 ```sh
-git clone git@github.com:ojas-bhagavath/.dotfiles-arch ~/.config/ojas-bhagavath/.dotfiles-arch
-NVIM_APPNAME=ojas-bhagavath/.dotfiles-arch/nvim/.config/nvim nvim --headless +"Lazy! sync" +qa
+git clone git@github.com:ojas-bhagavath/nvim.git ~/.config/nvim/
 ```
 
-Open Neovim with this config:
+Remove the `.git` repo to make it your own:
 
 ```sh
-NVIM_APPNAME=ojas-bhagavath/.dotfiles-arch/nvim/.config/nvim nvim
+rm -rf ~/.config/nvim/.git
+```
+
+Start neovim!
+
+```sh
+nvim
 ```
 
 ## Plugins
