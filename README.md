@@ -1,8 +1,5 @@
 # nvim
 
-<a href="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim"><img src="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim"><img src="https://dotfyle.com/ojas-bhagavath/dotfiles-arch-nvim-config-nvim/badges/plugin-manager?style=flat" /></a>
-
 ## Install Instructions
 
 > Install requires [neovim](https://github.com/neovim/neovim) 0.9+. Always review the code before installing a configuration.
