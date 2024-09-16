@@ -12,7 +12,27 @@ return {
             },
         },
         config = function()
-            vim.cmd([[colorscheme tokyonight-moon]])
+            if vim.o.background == "dark" then
+                vim.cmd([[colorscheme tokyonight-moon]])
+            end
+        end,
+    },
+    {
+        "ellisonleao/gruvbox.nvim",
+        priority = 1000,
+        config = function()
+            if vim.o.background == "light" then
+                vim.cmd([[colorscheme gruvbox]])
+            end
+            vim.keymap.set("n", "<leader>oc", function()
+                if vim.o.background == "dark" then
+                    vim.o.background = "light"
+                    vim.cmd("colorscheme gruvbox")
+                else
+                    vim.o.background = "dark"
+                    vim.cmd("colorscheme tokyonight-moon")
+                end
+            end, { desc = "Toggle Colorscheme" })
         end,
     },
 }

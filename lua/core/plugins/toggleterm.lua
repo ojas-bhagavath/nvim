@@ -17,7 +17,7 @@ return {
         {
             "<c-\\>",
             mode = { "n" },
-            "<cmd>ToggleTerm<cr>",
+            "<cmd>ToggleTerm direction=float<cr>",
             desc = "Toggleterm",
         },
         {

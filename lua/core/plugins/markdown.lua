@@ -25,7 +25,7 @@ return {
                 "<leader>oM",
                 ft = "markdown",
                 "<cmd>Markview toggle<cr>",
-                desc = "Markview Toggle",
+                desc = "Markview toggle",
             },
         },
     },

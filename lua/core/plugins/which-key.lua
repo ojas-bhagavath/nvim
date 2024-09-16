@@ -32,6 +32,7 @@ return {
             { "<leader>s", group = "split", icon = "" },
             { "<leader>t", group = "terminal", icon = { icon = "", color = "green" } },
             { "<leader>u", group = "ui" },
+            { "<leader>x", group = "diagnostics" },
             { "<leader>?", group = "which-key", icon = "" },
         })
     end,
