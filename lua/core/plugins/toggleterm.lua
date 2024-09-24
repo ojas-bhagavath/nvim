@@ -1,5 +1,6 @@
 return {
     "akinsho/toggleterm.nvim",
+    event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     version = "*",
     config = function()
         require("toggleterm").setup({
@@ -10,15 +11,28 @@ return {
                     return vim.o.columns * 0.4
                 end
             end,
-            open_mapping = [[<c-\>]],
+            open_mapping = "<leader>\\",
         })
+
+        local Terminal = require("toggleterm.terminal").Terminal
+        local lazygit = Terminal:new({
+            cmd = "lazygit",
+            hidden = true,
+            direction = "float",
+        })
+
+        function _lazygit_toggle()
+            lazygit:toggle()
+        end
+
+        vim.api.nvim_set_keymap("n", "<leader>gl", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
     end,
     keys = {
         {
-            "<c-\\>",
+            "<leader>\\",
             mode = { "n" },
-            "<cmd>ToggleTerm direction=float<cr>",
-            desc = "Toggleterm",
+            "<cmd>ToggleTerm direction=horizontal<cr>",
+            desc = "Toggleterm Horizontal",
         },
         {
             "<leader>tt",
@@ -38,5 +52,11 @@ return {
             "<cmd>ToggleTerm direction=vertical<cr>",
             desc = "Toggleterm Right",
         },
+        -- {
+        --     "<leader>gl",
+        --     mode = { "n" },
+        --     "lua require('toggleterm.terminal').Terminal:new({cmd = 'lazygit',hidden=true,direction=float,}):toggle()<CR>",
+        --     desc = "Toggle Lazygit",
+        -- },
     },
 }
