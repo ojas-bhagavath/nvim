@@ -24,16 +24,16 @@ return {
             { "<leader>c", group = "code", icon = "" },
             { "<leader>e", group = "yazi", icon = { icon = "󰇥", color = "yellow" } },
             { "<leader>f", group = "find/file", icon = "" },
-            { "<leader>g", group = "git", icon = { icon = "", color = "red" } },
+            { "<leader>g", group = "lazygit", icon = { icon = "", color = "red" } },
             { "<leader>l", group = "lazy", icon = "󰒲" },
             { "<leader>o", group = "options/toggle", icon = "" },
             { "<leader>q", group = "sessions", icon = { icon = "", color = "white" } },
             { "<leader>r", group = "reload", icon = "󰑓" },
             { "<leader>s", group = "split", icon = "" },
-            { "<leader>t", group = "terminal", icon = { icon = "", color = "green" } },
             { "<leader>u", group = "ui" },
             { "<leader>x", group = "diagnostics" },
             { "<leader>?", group = "which-key", icon = "" },
+            { "<leader>\\", group = "toggleterm", icon = { icon = "", color = "green" } },
         })
     end,
 }

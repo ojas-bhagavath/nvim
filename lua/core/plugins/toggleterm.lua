@@ -25,7 +25,7 @@ return {
             lazygit:toggle()
         end
 
-        vim.api.nvim_set_keymap("n", "<leader>gl", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
+        vim.keymap.set("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true, desc = "Lazygit" })
     end,
     keys = {
         {
@@ -34,29 +34,5 @@ return {
             "<cmd>ToggleTerm direction=horizontal<cr>",
             desc = "Toggleterm Horizontal",
         },
-        {
-            "<leader>tt",
-            mode = { "n" },
-            "<cmd>ToggleTerm direction=float<cr>",
-            desc = "Toggleterm Float",
-        },
-        {
-            "<leader>th",
-            mode = { "n" },
-            "<cmd>ToggleTerm direction=horizontal<cr>",
-            desc = "Toggleterm Bottom",
-        },
-        {
-            "<leader>tv",
-            mode = { "n" },
-            "<cmd>ToggleTerm direction=vertical<cr>",
-            desc = "Toggleterm Right",
-        },
-        -- {
-        --     "<leader>gl",
-        --     mode = { "n" },
-        --     "lua require('toggleterm.terminal').Terminal:new({cmd = 'lazygit',hidden=true,direction=float,}):toggle()<CR>",
-        --     desc = "Toggle Lazygit",
-        -- },
     },
 }
