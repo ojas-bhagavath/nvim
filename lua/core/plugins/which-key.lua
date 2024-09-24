@@ -31,6 +31,7 @@ return {
             { "<leader>r", group = "reload", icon = "󰑓" },
             { "<leader>s", group = "split", icon = "" },
             { "<leader>u", group = "ui" },
+            { "<leader>v", group = "vimtex" },
             { "<leader>x", group = "diagnostics" },
             { "<leader>?", group = "which-key", icon = "" },
             { "<leader>\\", group = "toggleterm", icon = { icon = "", color = "green" } },
