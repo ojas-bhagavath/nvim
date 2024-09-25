@@ -16,6 +16,8 @@ map("n", "<leader>sh", "<C-w>s", { desc = "Split Pane Horizontally" })
 map("n", "<leader>se", "<C-w>=", { desc = "Make Splits Equal Size" })
 map("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close Current Split" })
 
+-- buffer management
+map("n", "<leader>bb", "<cmd>buffer#<CR>", { desc = "Switch to Last Buffer" })
 -- tab management
 map("n", "<leader><tab>o", "<cmd>tabnew<CR>", { desc = "Open New Tab" })
 map("n", "<leader><tab>x", "<cmd>tabclose<CR>", { desc = "Close Current Tab" })

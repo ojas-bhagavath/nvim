@@ -5,7 +5,8 @@ return {
     lazy = true,
     config = function()
         require("luasnip").setup({
-            updateevents = "TextChanged,TextChangedI",
+            link_children = true,
+            update_events = "TextChanged,TextChangedI",
             enable_autosnippets = true,
             snip_env = {
                 s = require("luasnip").snippet,
@@ -37,7 +38,7 @@ return {
                     return vim.fn["vimtex#syntax#in_mathzone"]() == 1
                 end,
                 in_textzone = function()
-                    return vim.fn["vimtex#syntax#in_mathzone"]() == 0
+                    return not in_mathzone()
                 end,
             },
         })

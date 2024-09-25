@@ -1,4 +1,17 @@
 ---@diagnostic disable: undefined-global
+-- local function env(name)
+--     local lnum = vim.fn["vimtex#env#is_inside"](name)[1]
+--     local cnum = vim.fn["vimtex#env#is_inside"](name)[2]
+--     return (lnum > 0 and cnum > 0)
+-- end
+
+local function env(name)
+    local is_inside = vim.fn["vimtex#env#is_inside"](name)
+    return (is_inside[1] > 0 and is_inside[2] > 0)
+end
+local function in_list()
+    return env("itemize") or env("enumerate")
+end
 return {
     s(
         { trig = "init", snippetType = "autosnippet" },
@@ -54,5 +67,7 @@ return {
 
     s({ trig = "\\\\", wordTrig = false, snippetType = "autosnippet" }, {
         t({ "\\\\", "" }),
-    }, { condition = conds.line_end }),
+    }),
+
+    s({ trig = "-", snippetType = "autosnippet" }, { t("\\item ") }, { condition = conds.line_begin * in_list }),
 }

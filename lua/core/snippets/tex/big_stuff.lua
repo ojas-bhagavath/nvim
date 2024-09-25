@@ -93,6 +93,7 @@ return {
     \begin{<>}
     <>
     \end{<>}
+
     ]],
             {
                 f(function(_, snip)
