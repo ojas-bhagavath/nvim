@@ -1,1 +1,1 @@
-/home/ojas/.config/nvim/lua/core/snippets/tex/math_fonts.lua
+../tex/math_fonts.lua

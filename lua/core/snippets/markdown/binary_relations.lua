@@ -1,1 +1,1 @@
-/home/ojas/.config/nvim/lua/core/snippets/tex/binary_relations.lua
+../tex/binary_relations.lua

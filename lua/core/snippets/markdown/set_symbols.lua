@@ -1,1 +1,1 @@
-/home/ojas/.config/nvim/lua/core/snippets/tex/set_symbols.lua
+../tex/set_symbols.lua

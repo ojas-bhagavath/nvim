@@ -1,1 +1,1 @@
-/home/ojas/.config/nvim/lua/core/snippets/tex/binary_operators.lua
+../tex/binary_operators.lua

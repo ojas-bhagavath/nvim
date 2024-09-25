@@ -1,1 +1,1 @@
-/home/ojas/.config/nvim/lua/core/snippets/tex/env.lua
+../tex/env.lua

@@ -1,1 +1,1 @@
-/home/ojas/.config/nvim/lua/core/snippets/tex/accents_subsuperscripts.lua
+../tex/accents_subsuperscripts.lua

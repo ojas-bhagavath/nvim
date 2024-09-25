@@ -1,1 +1,1 @@
-/home/ojas/.config/nvim/lua/core/snippets/tex/arrows.lua
+../tex/arrows.lua
