@@ -25,6 +25,7 @@ return {
     s({ trig = "max", snippetType = "autosnippet" }, t("\\max"), { condition = in_mathzone }),
     s({ trig = "min", snippetType = "autosnippet" }, t("\\min"), { condition = in_mathzone }),
     s({ trig = "sec", snippetType = "autosnippet" }, t("\\sec"), { condition = in_mathzone }),
+    s({ trig = "set-", snippetType = "autosnippet" }, t("\\setminus"), { condition = in_mathzone }),
     s({ trig = "sin", snippetType = "autosnippet" }, t("\\sin"), { condition = in_mathzone }),
     s({ trig = "sup", snippetType = "autosnippet" }, t("\\sup"), { condition = in_mathzone }),
     s({ trig = "tan", snippetType = "autosnippet" }, t("\\tan"), { condition = in_mathzone }),

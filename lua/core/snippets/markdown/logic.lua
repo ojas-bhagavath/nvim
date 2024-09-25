@@ -8,6 +8,7 @@ return {
     s({ trig = "andd", snippetType = "autosnippet" }, t("\\land"), { condition = in_mathzone }),
     s({ trig = "forall", snippetType = "autosnippet" }, t("\\forall"), { condition = in_mathzone }),
     s({ trig = "is", snippetType = "autosnippet" }, t("\\exists"), { condition = in_mathzone }),
+    s({ trig = "ni", snippetType = "autosnippet" }, t("\\ni"), { condition = in_mathzone }),
     s({ trig = ":.", snippetType = "autosnippet" }, t("\\because"), { condition = in_mathzone }),
     s({ trig = ".:", snippetType = "autosnippet" }, t("\\therefore"), { condition = in_mathzone }),
 }

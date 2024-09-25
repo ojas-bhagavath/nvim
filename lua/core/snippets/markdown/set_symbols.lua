@@ -3,7 +3,6 @@ local in_mathzone = function()
 end
 
 return {
-    s({ trig = "\\\\\\", snippetType = "autosnippet" }, t("\\setminus"), { condition = in_mathzone }),
     s({ trig = "cap", snippetType = "autosnippet" }, t("\\cap"), { condition = in_mathzone }),
     s({ trig = "cup", snippetType = "autosnippet" }, t("\\cup"), { condition = in_mathzone }),
     s({ trig = "scup", snippetType = "autosnippet" }, t("\\sqcup"), { condition = in_mathzone }),

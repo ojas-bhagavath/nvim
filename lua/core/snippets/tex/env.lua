@@ -1,6 +1,6 @@
 return {
     s(
-        { trig = "init", snippetType = "snippet" },
+        { trig = "init", snippetType = "autosnippet" },
         fmta(
             [[
 \documentclass[<>]{<>}
@@ -34,7 +34,8 @@ return {
                 i(6, "Ojas G Bhagavath"),
                 i(7),
             }
-        )
+        ),
+        { condition = conds.line_begin }
     ),
 
     s(
@@ -49,4 +50,8 @@ return {
             { i(1), i(2), i(3), rep(1) }
         )
     ),
+
+    s({ trig = "\\\\", wordTrig = false, snippetType = "autosnippet" }, {
+        t({ "\\\\", "" }),
+    }, { condition = conds.line_end }),
 }
