@@ -1,7 +1,3 @@
-local in_mathzone = function()
-    return vim.fn["vimtex#syntax#in_mathzone"]() == 1
-end
-
 return {
     s({ trig = "bb(%a)", regTrig = true, snippetType = "autosnippet" }, {
         f(function(_, snip)

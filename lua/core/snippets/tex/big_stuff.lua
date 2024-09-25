@@ -1,7 +1,3 @@
-local in_mathzone = function()
-    return vim.fn["vimtex#syntax#in_mathzone"]() == 1
-end
-
 return {
     s({ trig = "lrr", snippetType = "autosnippet" }, fmta("\\left(<>\\right)", { i(1) }), { condition = in_mathzone }),
     s({ trig = "lrs", snippetType = "autosnippet" }, fmta("\\left[<>\\right]", { i(1) }), { condition = in_mathzone }),
@@ -13,7 +9,7 @@ return {
     s(
         { trig = "sum", snippetType = "autosnippet" },
         c(1, {
-            fmta("\\sum_{<>}^{<>}{<>}", { i(1), i(2), i(3) }),
+            fmta("\\sum\\limits_{<>}^{<>}{<>}", { i(1), i(2), i(3) }),
             fmta("\\sum{<>}", i(1)),
         }),
         { condition = in_mathzone }
@@ -21,7 +17,7 @@ return {
     s(
         { trig = "prod", snippetType = "autosnippet" },
         c(1, {
-            fmta("\\prod_{<>}^{<>}{<>}", { i(1), i(2), i(3) }),
+            fmta("\\prod\\limits_{<>}^{<>}{<>}", { i(1), i(2), i(3) }),
             fmta("\\prod{<>}", i(1)),
         }),
         { condition = in_mathzone }
@@ -65,6 +61,28 @@ return {
             fmta("\\lim\\limits_{<> \\to <>}{<>}", { i(1), i(2), i(3) }),
             fmta("\\lim{<>}", i(1)),
         }),
+        { condition = in_mathzone }
+    ),
+
+    -- matrices!
+    s(
+        { trig = "([bBpvV])mat(%d+)x(%d+)", regTrig = true, name = "matrix", dscr = "matrix trigger lets go", snippetType = "autosnippet" },
+        fmt(
+            [[
+    \begin{<>}
+    <>
+    \end{<>}]],
+            {
+                f(function(_, snip)
+                    return snip.captures[1] .. "matrix" -- captures matrix type
+                end),
+                d(1, mat),
+                f(function(_, snip)
+                    return snip.captures[1] .. "matrix" -- i think i could probably use a repeat node but whatever
+                end),
+            },
+            { delimiters = "<>" }
+        ),
         { condition = in_mathzone }
     ),
 }

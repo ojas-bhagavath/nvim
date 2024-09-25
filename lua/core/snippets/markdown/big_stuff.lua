@@ -1,7 +1,3 @@
-local in_mathzone = function()
-    return vim.fn["vimtex#syntax#in_mathzone"]() == 1
-end
-
 return {
     s({ trig = "lrr", snippetType = "autosnippet" }, fmta("\\left(<>\\right)", { i(1) }), { condition = in_mathzone }),
     s({ trig = "lrs", snippetType = "autosnippet" }, fmta("\\left[<>\\right]", { i(1) }), { condition = in_mathzone }),
