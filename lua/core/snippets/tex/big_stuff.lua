@@ -1,4 +1,24 @@
 ---@diagnostic disable: undefined-global
+local mat = function(_, snip)
+    local rows = tonumber(snip.captures[2])
+    local cols = tonumber(snip.captures[3])
+    local nodes = {}
+    local ins_indx = 1
+    for j = 1, rows do
+        table.insert(nodes, r(ins_indx, tostring(j) .. "x1", i(1, "0")))
+        ins_indx = ins_indx + 1
+        for k = 2, cols do
+            table.insert(nodes, t(" & "))
+            table.insert(nodes, r(ins_indx, tostring(j) .. "x" .. tostring(k), i(1, "0")))
+            ins_indx = ins_indx + 1
+        end
+        table.insert(nodes, t({ " \\\\", "" }))
+    end
+    -- fix last node.
+    nodes[#nodes] = t(" \\\\")
+    return sn(nil, nodes)
+end
+
 return {
     s({ trig = "lrr", snippetType = "autosnippet" }, fmta("\\left(<>\\right)", { i(1) }), { condition = in_mathzone }),
     s({ trig = "lrs", snippetType = "autosnippet" }, fmta("\\left[<>\\right]", { i(1) }), { condition = in_mathzone }),
@@ -72,7 +92,8 @@ return {
             [[
     \begin{<>}
     <>
-    \end{<>}]],
+    \end{<>}
+    ]],
             {
                 f(function(_, snip)
                     return snip.captures[1] .. "matrix" -- captures matrix type

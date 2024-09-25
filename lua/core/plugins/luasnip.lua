@@ -39,25 +39,6 @@ return {
                 in_textzone = function()
                     return vim.fn["vimtex#syntax#in_mathzone"]() == 0
                 end,
-                mat = function(args, snip)
-                    local rows = tonumber(snip.captures[2])
-                    local cols = tonumber(snip.captures[3])
-                    local nodes = {}
-                    local ins_indx = 1
-                    for j = 1, rows do
-                        table.insert(nodes, r(ins_indx, tostring(j) .. "x1", i(1)))
-                        ins_indx = ins_indx + 1
-                        for k = 2, cols do
-                            table.insert(nodes, t(" & "))
-                            table.insert(nodes, r(ins_indx, tostring(j) .. "x" .. tostring(k), i(1)))
-                            ins_indx = ins_indx + 1
-                        end
-                        table.insert(nodes, t({ " \\\\", "" }))
-                    end
-                    -- fix last node.
-                    nodes[#nodes] = t(" \\\\")
-                    return sn(nil, nodes)
-                end,
             },
         })
 
