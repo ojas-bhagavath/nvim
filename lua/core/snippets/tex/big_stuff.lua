@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 return {
     s({ trig = "lrr", snippetType = "autosnippet" }, fmta("\\left(<>\\right)", { i(1) }), { condition = in_mathzone }),
     s({ trig = "lrs", snippetType = "autosnippet" }, fmta("\\left[<>\\right]", { i(1) }), { condition = in_mathzone }),

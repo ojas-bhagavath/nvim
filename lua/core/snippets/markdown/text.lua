@@ -1,4 +1,1 @@
-return {
-    s({ trig = "wrt", snippetType = "autosnippet" }, t("with respect to"), { condition = in_textzone }),
-    s({ trig = "tfae", snippetType = "autosnippet" }, t("the following are equivalent:"), { condition = in_textzone }),
-}
+/home/ojas/.config/nvim/lua/core/snippets/tex/text.lua

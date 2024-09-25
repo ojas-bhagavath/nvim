@@ -1,15 +1,1 @@
-return {
-    s(
-        { trig = "env", snippetType = "autosnippet" },
-        fmta(
-            [[
-          \begin{<>}[<>]
-          <>
-          \end{<>}
-
-           ]],
-            { i(1), i(2), i(3), rep(1) }
-        ),
-        { condition = in_mathzone }
-    ),
-}
+/home/ojas/.config/nvim/lua/core/snippets/tex/env.lua

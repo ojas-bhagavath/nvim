@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global
 return {
     s({ trig = "Im", snippetType = "autosnippet" }, t("\\Im"), { condition = in_mathzone }),
     s({ trig = "Re", snippetType = "autosnippet" }, t("\\Re"), { condition = in_mathzone }),
