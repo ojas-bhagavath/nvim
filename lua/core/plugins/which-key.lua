@@ -35,6 +35,7 @@ return {
             { "<leader>x", group = "diagnostics" },
             { "<leader>?", group = "which-key", icon = "" },
             { "<leader>\\", group = "toggleterm", icon = { icon = "", color = "green" } },
+            { "<localleader>l", group = "vimtex", icon = { icon = "", color = "green" } },
         })
     end,
 }

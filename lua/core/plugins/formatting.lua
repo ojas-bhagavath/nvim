@@ -30,7 +30,6 @@ return {
             markdown = { "prettier", "markdownlint-cli2", "markdown-toc" },
             python = { "isort", "black" },
             shell = { "shfmt" },
-            tex = { "latexindent" },
             toml = { "taplo" },
         },
     },

@@ -7,20 +7,4 @@ return {
         vim.g.vimtex_view_method = "sioyek"
         vim.cmd([[autocmd BufNewFile,BufRead *.md so $VIMRUNTIME/syntax/tex.vim]])
     end,
-    keys = {
-        {
-            "<leader>vc",
-            mode = "n",
-            ft = { "tex" },
-            "<cmd>VimtexCompile<cr>",
-            desc = "Vimtex Compile",
-        },
-        {
-            "<leader>vv",
-            mode = "n",
-            ft = { "tex" },
-            "<cmd>VimtexView<cr>",
-            desc = "Vimtex Forward Search",
-        },
-    },
 }
