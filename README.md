@@ -19,7 +19,7 @@ mv ~/.cache/nvim{,.bak}
 Clone the repository and install the plugins:
 
 ```sh
-git clone git@github.com:ojas-bhagavath/nvim.git ~/.config/nvim/
+git clone https://github.com/ojas-bhagavath/nvim.git ~/.config/nvim/os
 ```
 
 Remove the `.git` repo to make it your own:
@@ -49,6 +49,7 @@ nvim
   - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip),
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [echasnovski/mini.surround](https://github.com/echasnovski/mini.surround)
 
 ### colorscheme
 
@@ -93,7 +94,6 @@ nvim
 - [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua)
 - [nvimdev/dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
-- [j-hui/fidget.nvim](https://github.com/j-hui/fidget.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
 - [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
