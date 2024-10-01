@@ -6,8 +6,15 @@ return {
     config = function()
         require("luasnip").setup({
             link_children = true,
-            update_events = "TextChanged,TextChangedI",
+            update_events = { "TextChanged", "TextChangedI", "InsertLeave" },
             enable_autosnippets = true,
+            ext_opts = {
+                [require("luasnip.util.types").choiceNode] = {
+                    active = {
+                        virt_text = { { "●", "Boolean" } },
+                    },
+                },
+            },
             snip_env = {
                 s = require("luasnip").snippet,
                 sn = require("luasnip").snippet_node,
