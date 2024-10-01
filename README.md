@@ -19,7 +19,7 @@ mv ~/.cache/nvim{,.bak}
 Clone the repository and install the plugins:
 
 ```sh
-git clone https://github.com/ojas-bhagavath/nvim.git ~/.config/nvim/os
+git clone https://github.com/ojas-bhagavath/nvim.git ~/.config/nvim/
 ```
 
 Remove the `.git` repo to make it your own:
