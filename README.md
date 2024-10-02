@@ -49,7 +49,7 @@ nvim
   - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip),
 - [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-- [echasnovski/mini.surround](https://github.com/echasnovski/mini.surround)
+- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
 
 ### colorscheme
 
