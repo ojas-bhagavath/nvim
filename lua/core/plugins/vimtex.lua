@@ -1,6 +1,5 @@
 return {
     "lervag/vimtex",
-    event = { "VeryLazy" },
     config = function()
         -- vim.g.vimtex_mappings_disable = { ["n"] = { "K" } }
         vim.g.vimtex_quickfix_open_on_warning = 0
