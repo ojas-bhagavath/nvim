@@ -27,7 +27,7 @@ return {
             bash = { "shfmt" },
             html = { "htmlbeautifier" },
             lua = { "stylua" },
-            markdown = { "prettier", "markdownlint-cli2", "markdown-toc" },
+            markdown = { "prettier" },
             python = { "isort", "black" },
             shell = { "shfmt" },
             toml = { "taplo" },
