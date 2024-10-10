@@ -19,6 +19,7 @@ vim.opt.fillchars = { foldopen = "", foldclose = "", fold = " ", foldsep =
 vim.opt.foldlevel = 99
 vim.opt.formatoptions = "jcroqlnt"
 vim.opt.grepprg = "rg --vimgrep"
+vim.opt.guifont = "Hack Nerd Font:h16"
 vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.inccommand = "split"

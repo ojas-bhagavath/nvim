@@ -14,7 +14,7 @@ return {
             css = true,
             css_fn = true,
         },
-        buftypes = {},
+        buftypes = { "*" },
     },
     keys = {
         { "<leader>oC", mode = "n", "<cmd>ColorizerToggle<cr>", desc = "Toggle Colorizer" },
