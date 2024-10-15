@@ -1,45 +1,48 @@
 return {
     "nvim-telescope/telescope.nvim",
+    cmd = "Telescope",
     dependencies = {
         "nvim-lua/plenary.nvim",
-        { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
         "nvim-tree/nvim-web-devicons",
     },
     cmd = "Telescope",
-    version = false,
+    main = "telescope",
+    opts = {
+        defaults = {
+            path_display = { "smart" },
+        },
+        pickers = {
+            find_files = {
+                hidden = true,
+            },
+            oldfiles = {
+                hidden = true,
+            },
+            live_grep = {
+                hidden = true,
+            },
+            grep_string = {
+                hidden = true,
+            },
+        },
+    },
     config = function()
-        local telescope = require("telescope")
-        local actions = require("telescope.actions")
-        telescope.setup({
+        require("telescope").setup({
             defaults = {
-                path_display = { "smart" },
                 mappings = {
                     i = {
-                        ["<C-k>"] = actions.move_selection_previous,
-                        ["<C-j>"] = actions.move_selection_next,
+                        ["<C-k>"] = require("telescope.actions").move_selection_previous,
+                        ["<C-j>"] = require("telescope.actions").move_selection_next,
                     },
-                },
-            },
-            pickers = {
-                find_files = {
-                    hidden = true,
-                },
-                oldfiles = {
-                    hidden = true,
-                },
-                live_grep = {
-                    hidden = true,
-                },
-                grep_string = {
-                    hidden = true,
                 },
             },
         })
     end,
     keys = {
-        { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "fuzzy find files in cwd" },
-        { "<leader>fr", "<cmd>Telescope oldfiles<CR>", desc = "fuzzy find recent files" },
-        { "<leader>fs", "<cmd>Telescope live_grep<CR>", desc = "fuzzy find string in cwd" },
-        { "<leader>fc", "<cmd>Telescope grep_string<CR>", desc = "fuzzy find string under the cursor" },
+        { "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>", desc = "fuzzy find files in cwd" },
+        { "<leader>fr", "<cmd>lua require('telescope.builtin').oldfiles()<CR>", desc = "fuzzy find recent files" },
+        { "<leader>fs", "<cmd>lua require('telescope.builtin').live_grep()<CR>", desc = "fuzzy find string in cwd" },
+        { "<leader>fc", "<cmd>lua require('telescope.builtin').grep_string()<CR>", desc = "fuzzy find string under the cursor" },
+        { "<leader><leader>", "<cmd>lua require('telescope.builtin').buffers()<CR>", desc = "fuzzy find buffers" },
     },
 }
