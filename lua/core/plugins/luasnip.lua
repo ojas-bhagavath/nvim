@@ -45,7 +45,7 @@ return {
                     return vim.fn["vimtex#syntax#in_mathzone"]() == 1
                 end,
                 in_textzone = function()
-                    return not in_mathzone()
+                    return vim.fn["vimtex#syntax#in_mathzone"]() == 0
                 end,
             },
         })
