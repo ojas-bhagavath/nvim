@@ -6,7 +6,6 @@ return {
     },
     event = { "BufReadPost", "BufNewFile", "BufWritePost" },
     config = function()
-        local helpers = require("incline.helpers")
         require("incline").setup({
             render = function(props)
                 local function get_diagnostics()
