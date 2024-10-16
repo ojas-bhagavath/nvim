@@ -60,8 +60,8 @@ nvim
 - [mikavilpas/yazi.nvim](https://github.com/mikavilpas/yazi.nvim)
 - [folke/flash.nvim](https://github.com/folke/flash.nvim)
 - [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
-- [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [echasnovski/mini.move](https://github.com/echasnovski/mini.move)
+- [echasnovski/mini.splitjoin](https://github.com/echasnovski/mini.splitjoin)
 
 ### formatting
 
@@ -86,12 +86,13 @@ nvim
 ### ui
 
 - [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify)
-- [nvim-lualine/lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [b0o/incline.nvim](https://github.com/b0o/incline.nvim)
 - [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [echasnovski/mini.indentscope](https://github.com/echasnovski/mini.indentscope)
 - [folke/noice.nvim](https://github.com/folke/noice.nvim)
 - [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [NvChad/nvim-colorizer.lua](https://github.com/NvChad/nvim-colorizer.lua)
+- [echasnovski/mini.hipatterns](https://github.com/echasnovski/mini.hipatterns)
+- [echasnovski/mini.diff](https://github.com/echasnovski/mini.diff)
 - [nvimdev/dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
@@ -102,7 +103,6 @@ nvim
 - [Shatur/neovim-session-manager](https://github.com/Shatur/neovim-session-manager)
 - [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [nvim-telescope/telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 - [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
 - [jiaoshijie/undotree](https://github.com/jiaoshijie/undotree)
 - [echasnovski/mini.bracketed](https://github.com/echasnovski/mini.bracketed)
@@ -113,7 +113,7 @@ nvim
 #### markdown
 
 - [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- [OXY2DEV/markview.nvim](https://github.com/OXY2DEV/markview.nvim)
+- [epwalsh/obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)
 
 #### latex
 
