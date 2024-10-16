@@ -60,9 +60,9 @@ return {
 
                     return {
                         " ",
+                        icon and { icon, " ", guibg = "none", guifg = color } or "",
                         { path, gui = modified and "bold,italic" or "bold" },
                         " ",
-                        icon and { icon, " ", guibg = "none", guifg = color } or "",
                     }
                 end
                 return {
