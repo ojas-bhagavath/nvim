@@ -1,6 +1,5 @@
 return {
     "echasnovski/mini.move",
-    version = false,
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     opts = {
         mappings = {
