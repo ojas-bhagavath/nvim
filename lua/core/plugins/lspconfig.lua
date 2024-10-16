@@ -49,9 +49,9 @@ return { -- LSP Configuration & Plugins
                 --
                 -- In this case, we create a function that lets us more easily define mappings specific
                 -- for LSP related items. It sets the mode, buffer and description for us each time.
-                local map = function(keys, func, desc)
-                    vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
-                end
+                -- local map = function(keys, func, desc)
+                --     vim.keymap.set("n", keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
+                -- end
 
                 -- Jump to the definition of the word under your cursor.
                 --  This is where a variable was first declared, or where a function is defined, etc.
