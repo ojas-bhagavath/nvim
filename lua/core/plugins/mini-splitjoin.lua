@@ -1,6 +1,7 @@
 return {
     "echasnovski/mini.splitjoin",
     main = "mini.splitjoin",
+    opts = {},
     keys = {
         {
             "gS",
