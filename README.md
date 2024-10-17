@@ -54,6 +54,7 @@ nvim
 ### colorscheme
 
 - [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+- [ellisonleao/gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim)
 
 ### editor
 
