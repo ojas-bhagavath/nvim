@@ -19,6 +19,7 @@ return {
     },
     {
         "ellisonleao/gruvbox.nvim",
+        lazy = false,
         priority = 1000,
         config = function()
             if vim.o.background == "light" then

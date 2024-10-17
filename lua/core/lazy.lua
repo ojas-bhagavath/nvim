@@ -14,14 +14,26 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("core.plugins", {
+require("lazy").setup({
+    defaults = {
+        lazy = true,
+    },
+    spec = {
+        {
+            import = "core.plugins",
+        },
+    },
     install = {
-        colorscheme = { "tokyonight-moon", "default" },
+        colorscheme = {
+            "tokyonight-moon",
+            "habamax",
+        },
+    },
+    ui = {
+        border = "rounded",
+        title = " Lazy ",
     },
     checker = {
-        enabled = true,
-    },
-    change_detection = {
-        notify = false,
+        enabled = false,
     },
 })
