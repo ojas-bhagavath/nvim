@@ -106,6 +106,7 @@ nvim
 - [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [kdheepak/lazygit.nvim](https://github.com/kdheepak/lazygit.nvim)
 - [jiaoshijie/undotree](https://github.com/jiaoshijie/undotree)
+- [echasnovski/mini.ai](https://github.com/echasnovski/mini.ai)
 - [echasnovski/mini.bracketed](https://github.com/echasnovski/mini.bracketed)
 - [echasnovski/mini.bufremove](https://github.com/echasnovski/mini.bufremove)
 
