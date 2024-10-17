@@ -97,7 +97,6 @@ nvim
 - [nvimdev/dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-- [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
 ### util
 
