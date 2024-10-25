@@ -9,8 +9,9 @@ return {
             desc = "Dismiss All Notifications",
         },
     },
+    main = "notify",
     opts = {
-        -- level = 3,
+        render = "wrapped-compact",
         stages = "slide",
         timeout = 3000,
         max_height = function()
