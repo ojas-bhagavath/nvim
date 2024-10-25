@@ -1,6 +1,7 @@
 return {
     "stevearc/conform.nvim",
     event = { "BufWritePre" },
+    cmd = { "ConformInfo" },
     keys = {
         {
             "<leader>cf",
@@ -12,23 +13,25 @@ return {
         },
     },
     opts = {
-        notify_on_error = false,
+        notify_on_error = true,
         format_on_save = function(bufnr)
-            -- Disable "format_on_save lsp_fallback" for languages that don't
-            -- have a well standardized coding style. You can add additional
-            -- languages here or re-enable it for the disabled ones.
             local disable_filetypes = { c = true, cpp = true }
             return {
                 timeout_ms = 500,
                 lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
             }
         end,
+        --         formatters = {
+        --             latexindent = {
+        --                  args =
+        --             }
+        --         },
         formatters_by_ft = {
             bash = { "shfmt" },
             html = { "htmlbeautifier" },
             lua = { "stylua" },
             markdown = { "prettier" },
-            python = { "isort", "black" },
+            python = { "black" },
             shell = { "shfmt" },
             toml = { "taplo" },
         },

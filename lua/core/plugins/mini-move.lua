@@ -1,6 +1,7 @@
 return {
     "echasnovski/mini.move",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
+    main = "mini.move",
     opts = {
         mappings = {
             -- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.

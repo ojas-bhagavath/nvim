@@ -5,15 +5,16 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim",
     },
+    main = "obsidian",
     opts = {
         workspaces = {
             {
                 name = "Academics",
-                path = "~/Stuff/Vaults/Lyceum/",
+                path = "~/Stuff/Vaults/academics/",
             },
             {
                 name = "Other",
-                path = "~/Stuff/Vaults/StoaPoikile/",
+                path = "~/Stuff/Vaults/personal/",
             },
         },
     },

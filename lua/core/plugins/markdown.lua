@@ -5,7 +5,6 @@ return {
         ft = { "markdown" },
         build = function(plugin)
             local package_manager = vim.fn.executable("yarn") and "yarn" or vim.fn.executable("npx") and "npx -y yarn" or false
-
             --- HACK: Use `yarn` or `npx` when possible, otherwise throw an error
             ---@see https://github.com/iamcco/markdown-preview.nvim/issues/690
             ---@see https://github.com/iamcco/markdown-preview.nvim/issues/695

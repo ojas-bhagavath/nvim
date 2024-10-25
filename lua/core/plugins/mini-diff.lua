@@ -4,7 +4,12 @@ return {
     main = "mini.diff",
     opts = {
         view = {
-            style = "number",
+            style = "sign",
+            signs = {
+                add = "┃",
+                change = "┃",
+                delete = "┃",
+            },
         },
     },
 }
