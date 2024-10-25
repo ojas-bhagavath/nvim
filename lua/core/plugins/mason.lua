@@ -28,6 +28,7 @@ return {
             "lua-language-server",
             "marksman",
             "prettier",
+            "pyright",
             "selene",
             "shellcheck",
             "stylua",
