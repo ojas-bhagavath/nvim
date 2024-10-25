@@ -77,7 +77,6 @@ nvim
 - [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
 - [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-- [WhoIsSethDaniel/mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim)
 
 ### treesitter
 
@@ -97,6 +96,7 @@ nvim
 - [nvimdev/dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
 - [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim)
 
 ### util
 
