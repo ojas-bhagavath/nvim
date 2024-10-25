@@ -51,10 +51,6 @@ map("i", ",", ",<c-g>u")
 map("i", ".", ".<c-g>u")
 map("i", ";", ";<c-g>u")
 
--- lazy
-map("n", "<leader>la", "<cmd>Lazy<cr>", { desc = "Lazy" })
-map("n", "<leader>ls", "<cmd>Lazy sync<cr>", { desc = "Lazy Sync" })
-
 -- options
 map("n", "<leader>on", "<cmd>set nu!<cr>", { desc = "Toggle Line Number" })
 map("n", "<leader>oN", "<cmd>set rnu!<cr>", { desc = "Toggle Relative Number" })
