@@ -18,6 +18,7 @@ map("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close Current Split" })
 
 -- buffer management
 map("n", "<leader>bb", "<cmd>buffer#<CR>", { desc = "Switch to Last Buffer" })
+
 -- tab management
 map("n", "<leader><tab>o", "<cmd>tabnew<CR>", { desc = "Open New Tab" })
 map("n", "<leader><tab>x", "<cmd>tabclose<CR>", { desc = "Close Current Tab" })
@@ -38,7 +39,6 @@ map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and Clear hlsea
 map("n", "<leader>rr", "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>", { desc = "Redraw / Clear hlsearch / Diff Update" })
 
 -- saner-behavior-of-n-and-N
-
 map("n", "n", "'Nn'[v:searchforward].'zv'", { expr = true, desc = "Next Search Result" })
 map("x", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next Search Result" })
 map("o", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next Search Result" })

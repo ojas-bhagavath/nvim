@@ -38,7 +38,7 @@ vim.opt.shiftwidth = 4
 vim.opt.shortmess:append({ W = true, I = true, c = true, C = true })
 vim.opt.showmode = false
 vim.opt.sidescrolloff = 8
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = "auto:2"
 vim.opt.smartcase = true
 vim.opt.smartindent = true
 vim.opt.spelllang = { "en" }

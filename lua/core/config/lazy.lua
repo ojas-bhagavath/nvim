@@ -34,7 +34,8 @@ require("lazy").setup({
         title = " Lazy ",
     },
     checker = {
-        enabled = false,
+        enabled = true,
+        notify = false,
     },
     change_detection = {
         enabled = true,
