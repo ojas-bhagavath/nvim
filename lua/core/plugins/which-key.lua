@@ -14,7 +14,6 @@ return {
     config = function()
         require("which-key").add({
             { "<leader><tab>", group = "tab", icon = "󰓩" },
-            { "<leader>U", group = "undo", icon = "󰕍" },
             { "<leader>b", group = "buffer", icon = "" },
             { "<leader>c", group = "code", icon = "" },
             { "<leader>e", group = "yazi", icon = { icon = "󰇥", color = "yellow" } },
@@ -25,11 +24,11 @@ return {
             { "<leader>q", group = "sessions", icon = { icon = "", color = "white" } },
             { "<leader>r", group = "reload", icon = "󰑓" },
             { "<leader>s", group = "split", icon = "" },
-            { "<leader>u", group = "ui" },
+            { "<leader>u", group = "undo/ui" },
             { "<leader>v", group = "vimtex" },
             { "<leader>x", group = "diagnostics", icon = { icon = "", color = "yellow" } },
             { "<leader>?", group = "which-key", icon = "" },
-            { "<leader>\\", group = "toggleterm", icon = { icon = "", color = "green" } },
+            { "<leader>\\", group = "toggleterm", icon = { icon = "", color = "azure" } },
             { "<localleader>l", group = "vimtex", icon = { icon = "", color = "green" } },
         })
     end,

@@ -1,6 +1,6 @@
 return {
     "neovim/nvim-lspconfig",
-    event = { "BufReadPre", "BufNewFile" },
+    event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         {
@@ -114,6 +114,17 @@ return {
             vim.keymap.set("n", "<leader>rl", "<cmd>LspRestart<CR>", { noremap = true, silent = true, buffer = bufnr, desc = "Restart LSP" })
         end
 
+        local signs = {
+            Error = " ",
+            Warn = " ",
+            Hint = " ",
+            Info = " ",
+        }
+        for type, icon in pairs(signs) do
+            local hl = "DiagnosticSign" .. type
+            vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+        end
+
         local capabilities = vim.lsp.protocol.make_client_capabilities()
         capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
@@ -131,6 +142,7 @@ return {
                 },
             },
             marksman = {},
+            rust_analyzer = {},
             taplo = {},
             texlab = {},
         }

@@ -8,12 +8,23 @@ return {
             function()
                 require("conform").format({ async = true, lsp_fallback = true })
             end,
-            mode = "",
+            mode = { "n", "v" },
             desc = "Code Format",
         },
     },
+    main = "conform",
     opts = {
-        notify_on_error = true,
+        formatters_by_ft = {
+            bash = { "shfmt" },
+            html = { "prettier" },
+            css = { "prettier" },
+            javascript = { "prettier" },
+            lua = { "stylua" },
+            markdown = { "prettier" },
+            python = { "isort", "black" },
+            shell = { "shfmt" },
+            toml = { "taplo" },
+        },
         format_on_save = function(bufnr)
             local disable_filetypes = { c = true, cpp = true }
             return {
@@ -21,19 +32,11 @@ return {
                 lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
             }
         end,
+        notify_on_error = true,
         --         formatters = {
         --             latexindent = {
         --                  args =
         --             }
         --         },
-        formatters_by_ft = {
-            bash = { "shfmt" },
-            html = { "htmlbeautifier" },
-            lua = { "stylua" },
-            markdown = { "prettier" },
-            python = { "black" },
-            shell = { "shfmt" },
-            toml = { "taplo" },
-        },
     },
 }

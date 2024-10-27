@@ -24,7 +24,15 @@ return {
                 header = vim.split(logo, "\n"),
                 center = {
                     {
-                        action = "ene | startinsert",
+                        action = function()
+                            vim.ui.input({ prompt = "Enter Filename" }, function(str)
+                                if str ~= "" then
+                                    vim.cmd("ene | w " .. str .. " | startinsert")
+                                else
+                                    vim.cmd("ene | startinsert")
+                                end
+                            end)
+                        end,
                         desc = " New File",
                         icon = " ",
                         key = "n",
