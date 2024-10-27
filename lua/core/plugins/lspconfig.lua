@@ -142,7 +142,6 @@ return {
                 },
             },
             marksman = {},
-            rust_analyzer = {},
             taplo = {},
             texlab = {},
         }
