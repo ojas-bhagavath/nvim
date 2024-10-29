@@ -1,23 +1,28 @@
 return {
     {
         "nvim-treesitter/nvim-treesitter",
-        event = { "BufReadPre", "BufNewFile" },
+        event = { "BufReadPost", "BufWritePost", "BufNewFile" },
+        dependencies = {
+            "windwp/nvim-ts-autotag",
+            opts = {},
+        },
         build = ":TSUpdate",
         opts = {
             ensure_installed = {
                 "bash",
-                "lua",
-                "luadoc",
-                "vim",
-                "vimdoc",
-                "markdown",
-                "markdown_inline",
-                "html",
                 "css",
+                "gitignore",
+                "html",
                 "javascript",
                 "json",
-                "gitignore",
+                "lua",
+                "luadoc",
+                "markdown",
+                "markdown_inline",
+                "python",
                 "regex",
+                "vim",
+                "vimdoc",
             },
             autoinstall = true,
             highlight = { enable = true },
@@ -34,13 +39,7 @@ return {
         },
         config = function(_, opts)
             require("nvim-treesitter.install").prefer_git = true
-            ---@diagnostic disable-next-line: missing-fields
             require("nvim-treesitter.configs").setup(opts)
         end,
-    },
-    {
-        "windwp/nvim-ts-autotag",
-        event = { "BufReadPost", "BufWritePost", "BufNewFile" },
-        opts = {},
     },
 }
