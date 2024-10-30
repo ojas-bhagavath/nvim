@@ -52,7 +52,7 @@ return {
                     {
                         action = "SessionManager load_last_session",
                         desc = " Restore Last Session",
-                        icon = " ",
+                        icon = "󰑓 ",
                         key = "s",
                     },
                     {

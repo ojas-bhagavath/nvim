@@ -14,6 +14,7 @@ return {
         config = function()
             if vim.o.background == "dark" then
                 vim.cmd([[colorscheme tokyonight-moon]])
+                vim.cmd([[highlight DiagnosticUnnecessary guifg=NONE]])
             end
         end,
     },

@@ -21,11 +21,11 @@ return {
             direction = "float",
         })
 
-        function _lazygit_toggle()
+        function Lazygit_Toggle()
             lazygit:toggle()
         end
 
-        vim.keymap.set("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true, desc = "Lazygit" })
+        vim.keymap.set("n", "<leader>g", "<cmd>lua Lazygit_Toggle()<CR>", { noremap = true, silent = true, desc = "Lazygit" })
     end,
     keys = {
         {
