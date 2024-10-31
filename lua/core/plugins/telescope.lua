@@ -34,6 +34,9 @@ return {
                         ["<C-k>"] = require("telescope.actions").move_selection_previous,
                         ["<C-j>"] = require("telescope.actions").move_selection_next,
                     },
+                    n = {
+                        ["d"] = require("telescope.actions").delete_buffer,
+                    },
                 },
             },
         })
@@ -43,6 +46,10 @@ return {
         { "<leader>fr", "<cmd>lua require('telescope.builtin').oldfiles()<CR>", desc = "fuzzy find recent files" },
         { "<leader>fs", "<cmd>lua require('telescope.builtin').live_grep()<CR>", desc = "fuzzy find string in cwd" },
         { "<leader>fc", "<cmd>lua require('telescope.builtin').grep_string()<CR>", desc = "fuzzy find string under the cursor" },
-        { "<leader><leader>", "<cmd>lua require('telescope.builtin').buffers()<CR>", desc = "fuzzy find buffers" },
+        {
+            "<leader><leader>",
+            "<cmd>lua require('telescope.builtin').buffers({sort_mru=true,sort_lastused=true,initial_mode='normal'})<CR>",
+            desc = "fuzzy find buffers",
+        },
     },
 }
