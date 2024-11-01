@@ -23,7 +23,7 @@ return {
                         end
                     end
                     if #labels > 0 then
-                        table.insert(labels, { " ┊" })
+                        table.insert(labels, { " " })
                     end
                     return labels
                 end
@@ -45,23 +45,28 @@ return {
                         end
                     end
                     if #labels > 0 then
-                        table.insert(labels, { " 󰊢 " .. signs.n_ranges .. " ┊" })
+                        table.insert(labels, { " 󰊢 " .. signs.n_ranges })
                     end
                     return labels
                 end
                 local function get_filename()
+                    local path = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ":~:h")
                     local file = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ":t")
+                    local pathfile = path .. "/" .. file
                     if file == "" then
-                        file = "[No Name]"
+                        pathfile = "[No Name]"
                     end
                     local icon, color = require("nvim-web-devicons").get_icon_color(file)
                     local modified = vim.bo[props.buf].modified
-                    local path = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(props.buf), ":~:h:t") .. "/" .. file
+                    local width = math.floor(vim.o.columns) - 20
+                    if string.len(pathfile) > width then
+                        pathfile = "..." .. string.sub(pathfile, -width)
+                    end
 
                     return {
                         " ",
                         icon and { icon, " ", guibg = "none", guifg = color } or "",
-                        { path, gui = modified and "bold,italic" or "bold" },
+                        { pathfile, gui = modified and "bold,italic" or "bold" },
                         " ",
                     }
                 end

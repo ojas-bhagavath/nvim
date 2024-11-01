@@ -12,6 +12,19 @@ return {
                 end
             end,
             open_mapping = "<leader>\\",
+            direction = "float",
+            float_opts = {
+                border = "curved",
+                width = function()
+                    return math.floor(vim.o.columns * 0.8)
+                end,
+                height = function()
+                    return math.floor(vim.o.lines * 0.8)
+                end,
+            },
+            highlights = {
+                FloatBorder = { link = "FloatBorder" },
+            },
         })
 
         local Terminal = require("toggleterm.terminal").Terminal
@@ -31,7 +44,7 @@ return {
         {
             "<leader>\\",
             mode = { "n" },
-            "<cmd>ToggleTerm direction=horizontal<cr>",
+            "<cmd>ToggleTerm direction=float<cr>",
             desc = "Toggleterm Horizontal",
         },
     },
