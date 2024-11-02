@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-global
 return {
     s({ trig = ":e", snippetType = "autosnippet" }, t("\\varepsilon"), { condition = in_mathzone }),
     s({ trig = ":f", snippetType = "autosnippet" }, t("\\varphi"), { condition = in_mathzone }),

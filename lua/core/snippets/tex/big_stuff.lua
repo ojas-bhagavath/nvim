@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-global
 local mat = function(_, snip)
     local rows = tonumber(snip.captures[2])
     local cols = tonumber(snip.captures[3])

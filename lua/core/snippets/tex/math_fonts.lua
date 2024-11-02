@@ -1,4 +1,3 @@
----@diagnostic disable: undefined-global
 return {
     s({ trig = "bb(%a)", regTrig = true, snippetType = "autosnippet" }, {
         f(function(_, snip)
