@@ -8,12 +8,19 @@ Backup your existing config:
 
 ```sh
 # required
+
 mv ~/.config/nvim{,.bak}
+# or if you don't want to backup your old config:
+# rm -rf ~/.config/nvim
 
 # optional but recommended
 mv ~/.local/share/nvim{,.bak}
 mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
+# or if you don't want to backup your old files:
+# rm -rf ~/.local/share/nvim
+# rm -rf ~/.local/state/nvim
+# rm -rf ~/.cache/nvim
 ```
 
 Clone the repository and install the plugins:
