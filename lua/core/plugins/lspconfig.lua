@@ -142,6 +142,7 @@ return {
                 },
             },
             marksman = {},
+            pyright = {},
             taplo = {},
             texlab = {},
         }

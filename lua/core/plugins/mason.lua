@@ -18,6 +18,8 @@ return {
                 package_uninstalled = "",
             },
             border = "rounded",
+            width = 0.8,
+            height = 0.8,
         },
         ensure_installed = {
             "bash-language-server",
