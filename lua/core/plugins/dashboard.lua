@@ -65,6 +65,14 @@ return {
                     },
                     {
                         action = function()
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/LaTeX/"))
+                        end,
+                        desc = " Open LaTeX Folder",
+                        icon = " ",
+                        key = "t",
+                    },
+                    {
+                        action = function()
                             require("yazi").yazi(nil, vim.fn.expand("$HOME/.config/nvim/"))
                         end,
                         desc = " Configure Neovim",
