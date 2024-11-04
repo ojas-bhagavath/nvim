@@ -111,7 +111,12 @@ return {
             )
 
             -- Restart LSP.
-            vim.keymap.set("n", "<leader>rl", "<cmd>LspRestart<CR>", { noremap = true, silent = true, buffer = bufnr, desc = "Restart LSP" })
+            vim.keymap.set(
+                "n",
+                "<leader>rl",
+                "<cmd>LspRestart<CR> | <cmd>lua require('notify')('Lsp Restarted!','info',{title = 'LspConfig'})<CR>",
+                { noremap = true, silent = true, buffer = bufnr, desc = "Restart LSP" }
+            )
         end
 
         local signs = {
