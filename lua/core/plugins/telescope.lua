@@ -5,28 +5,8 @@ return {
         "nvim-lua/plenary.nvim",
         "nvim-tree/nvim-web-devicons",
     },
-    cmd = "Telescope",
     main = "telescope",
-    opts = {
-        defaults = {
-            path_display = { "smart" },
-        },
-        pickers = {
-            find_files = {
-                hidden = true,
-            },
-            oldfiles = {
-                hidden = true,
-            },
-            live_grep = {
-                hidden = true,
-            },
-            grep_string = {
-                hidden = true,
-            },
-        },
-    },
-    config = function()
+    opts = function()
         local multiopen = function(prompt_bufnr)
             local picker = require("telescope.actions.state").get_current_picker(prompt_bufnr)
             local multi = picker:get_multi_selection()
@@ -41,8 +21,17 @@ return {
                 require("telescope.actions").select_default(prompt_bufnr)
             end
         end
-        require("telescope").setup({
+        return {
             defaults = {
+                sorting_strategy = "ascending",
+                layout_strategy = "horizontal",
+                layout_config = {
+                    height = 0.8,
+                    preview_width = 0.6,
+                    prompt_position = "top",
+                    width = 0.8,
+                },
+                path_display = { "smart" },
                 mappings = {
                     i = {
                         ["<C-k>"] = require("telescope.actions").move_selection_previous,
@@ -56,7 +45,12 @@ return {
                     },
                 },
             },
-        })
+            pickers = {
+                find_files = {
+                    hidden = true,
+                },
+            },
+        }
     end,
     keys = {
         { "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>", desc = "fuzzy find files in cwd" },
