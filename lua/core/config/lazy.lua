@@ -35,7 +35,6 @@ require("lazy").setup({
             height = 0.8,
         },
         border = "rounded",
-        title = " Lazy ",
     },
     checker = {
         enabled = true,
