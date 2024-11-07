@@ -1,6 +1,8 @@
 return {
     "L3MON4D3/LuaSnip",
     build = "make install_jsregexp",
+    event = { "InsertEnter" },
+    dependencies = { "hrsh7th/nvim-cmp" },
     config = function()
         require("luasnip").setup({
             link_children = true,
