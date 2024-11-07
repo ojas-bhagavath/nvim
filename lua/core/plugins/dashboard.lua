@@ -34,7 +34,7 @@ return {
                             end)
                         end,
                         desc = " New File",
-                        icon = " ",
+                        icon = " ",
                         key = "n",
                     },
                     {
@@ -46,13 +46,13 @@ return {
                     {
                         action = "Telescope oldfiles",
                         desc = " Recent Files",
-                        icon = " ",
+                        icon = "󱋢 ",
                         key = "r",
                     },
                     {
                         action = "SessionManager load_last_session",
                         desc = " Restore Last Session",
-                        icon = "󰑓 ",
+                        icon = " ",
                         key = "s",
                     },
                     {
@@ -60,7 +60,7 @@ return {
                             require("yazi").yazi(nil, vim.fn.expand("$HOME/.dotfiles/"))
                         end,
                         desc = " Open Dotfiles",
-                        icon = " ",
+                        icon = " ",
                         key = "d",
                     },
                     {
@@ -76,7 +76,7 @@ return {
                             require("yazi").yazi(nil, vim.fn.expand("$HOME/.config/nvim/"))
                         end,
                         desc = " Configure Neovim",
-                        icon = " ",
+                        icon = " ",
                         key = "c",
                     },
                     {
@@ -88,7 +88,7 @@ return {
                     {
                         action = "qa",
                         desc = " Quit Neovim",
-                        icon = " ",
+                        icon = " ",
                         key = "q",
                     },
                 },
