@@ -1,8 +1,8 @@
 return {
     "echasnovski/mini.hipatterns",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
-    config = function()
-        require("mini.hipatterns").setup({
+    opts = function()
+        return {
             highlighters = {
                 hex_color = require("mini.hipatterns").gen_highlighter.hex_color(),
                 fixme = { pattern = "FIXME", group = "MiniHipatternsFixme" },
@@ -10,7 +10,7 @@ return {
                 todo = { pattern = "TODO", group = "MiniHipatternsTodo" },
                 note = { pattern = "NOTE", group = "MiniHipatternsNote" },
             },
-        })
+        }
     end,
     keys = {
         {

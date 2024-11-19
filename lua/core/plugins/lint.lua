@@ -3,7 +3,7 @@ return {
     event = { "BufReadPre", "BufNewFile" },
     config = function()
         require("lint").linters_by_ft = {
-            shell = { "shellcheck" },
+            ["shell"] = { "shellcheck" },
         }
         -- Create autocommand which carries out the actual linting
         -- on the specified events.

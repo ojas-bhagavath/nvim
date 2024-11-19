@@ -48,8 +48,3 @@ vim.keymap.set("o", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev Se
 vim.keymap.set("i", ",", ",<c-g>u")
 vim.keymap.set("i", ".", ".<c-g>u")
 vim.keymap.set("i", ";", ";<c-g>u")
-
--- options
-vim.keymap.set("n", "<leader>on", "<cmd>set nu!<cr>", { desc = "Toggle Line Number" })
-vim.keymap.set("n", "<leader>oN", "<cmd>set rnu!<cr>", { desc = "Toggle Relative Number" })
-vim.keymap.set("n", "<leader>ow", "<cmd>set wrap!<cr>", { desc = "Toggle Wrap" })

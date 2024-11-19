@@ -62,7 +62,8 @@ return {
         { "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>", desc = "fuzzy find files in cwd" },
         { "<leader>fr", "<cmd>lua require('telescope.builtin').oldfiles()<CR>", desc = "fuzzy find recent files" },
         { "<leader>fs", "<cmd>lua require('telescope.builtin').live_grep()<CR>", desc = "fuzzy find string in cwd" },
-        { "<leader>fc", "<cmd>lua require('telescope.builtin').grep_string()<CR>", desc = "fuzzy find string under the cursor" },
+        { "<leader>fg", "<cmd>lua require('telescope.builtin').grep_string()<CR>", desc = "fuzzy find string under the cursor" },
+        { "<leader>fc", "<cmd>lua require('telescope.builtin').command_history()<CR>", desc = "fuzzy find string command history" },
         { "<leader><leader>", "<cmd>lua require('telescope.builtin').buffers()<CR>", desc = "fuzzy find buffers" },
     },
 }

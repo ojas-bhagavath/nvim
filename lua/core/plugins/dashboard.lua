@@ -1,6 +1,7 @@
 return {
     "nvimdev/dashboard-nvim",
     event = "VimEnter",
+    enabled = false,
     opts = function()
         local logo = [[
 ┏┳┓┏━┓  ┏━┓┏┓┏┏━┓  ┏┳┓┳ ┳┳┏┓┏┏━┓
@@ -11,7 +12,7 @@ return {
  ┻ ┻┛┗┛━┻┛  ━┻┛┗━┛  ┻ ┻   ┗┻┛┗━┛┻━┛┻━┛
 ]]
 
-        logo = string.rep("\n", 5) .. logo .. "\n\n"
+        logo = string.rep("\n", 5) .. logo .. string.rep("\n", 2)
 
         local opts = {
             theme = "doom",
@@ -60,7 +61,7 @@ return {
                             require("yazi").yazi(nil, vim.fn.expand("$HOME/.dotfiles/"))
                         end,
                         desc = " Open Dotfiles",
-                        icon = " ",
+                        icon = " ",
                         key = "d",
                     },
                     {
@@ -96,7 +97,7 @@ return {
                     local stats = require("lazy").stats()
                     local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
                     return {
-                        " Neovim loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms",
+                        " Lazy loaded " .. stats.loaded .. "/" .. stats.count .. " plugins in " .. ms .. "ms",
                     }
                 end,
             },

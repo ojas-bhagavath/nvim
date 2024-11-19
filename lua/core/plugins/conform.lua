@@ -33,10 +33,5 @@ return {
             }
         end,
         notify_on_error = true,
-        --         formatters = {
-        --             latexindent = {
-        --                  args =
-        --             }
-        --         },
     },
 }

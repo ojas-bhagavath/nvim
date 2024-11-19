@@ -37,6 +37,8 @@ return {
                 mapping = cmp.mapping.preset.cmdline({
                     ["<C-j>"] = { c = cmp.mapping.select_next_item() },
                     ["<C-k>"] = { c = cmp.mapping.select_prev_item() },
+                    ["<Down>"] = { c = cmp.mapping.select_next_item() },
+                    ["<Up>"] = { c = cmp.mapping.select_prev_item() },
                 }),
                 sources = {
                     { name = "buffer" },
@@ -46,12 +48,13 @@ return {
                 mapping = cmp.mapping.preset.cmdline({
                     ["<C-j>"] = { c = cmp.mapping.select_next_item() },
                     ["<C-k>"] = { c = cmp.mapping.select_prev_item() },
+                    ["<Down>"] = { c = cmp.mapping.select_next_item() },
+                    ["<Up>"] = { c = cmp.mapping.select_prev_item() },
                 }),
                 sources = cmp.config.sources({
                     { name = "path" },
                     { name = "cmdline" },
                 }),
-                matching = { disallow_symbol_nonprefix_matching = false },
             })
         end,
     },

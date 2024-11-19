@@ -3,13 +3,13 @@ return {
     event = "VeryLazy",
     dependencies = {
         "MunifTanjim/nui.nvim",
-        "rcarriga/nvim-notify",
     },
     main = "noice",
     opts = {
         cmdline = {
             format = {
-                telescope = { pattern = { "^:%s*Telescope%s+" }, icon = "" },
+                telescope = { pattern = { "^:%s*Telescope%s+" }, icon = " " },
+                man = { pattern = { "^:%s*Man%s+" }, icon = " " },
             },
         },
         popupmenu = {

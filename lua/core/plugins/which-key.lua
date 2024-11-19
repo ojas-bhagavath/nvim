@@ -18,7 +18,7 @@ return {
             { "<leader>c", group = "code", icon = "" },
             { "<leader>e", group = "yazi", icon = { icon = "󰇥", color = "yellow" } },
             { "<leader>f", group = "find/file", icon = "" },
-            { "<leader>g", group = "lazygit", icon = { icon = "", color = "red" } },
+            { "<leader>g", group = "git", icon = { icon = "", color = "red" } },
             { "<leader>l", group = "lsp", icon = "" },
             { "<leader>o", group = "options/toggle", icon = "" },
             { "<leader>q", group = "sessions", icon = { icon = "", color = "white" } },
