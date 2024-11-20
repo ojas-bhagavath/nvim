@@ -75,7 +75,7 @@ return {
         vim.keymap.set(
             "n",
             "<leader>rs",
-            "<cmd>lua require('luasnip.loaders.from_lua').load({paths = '~/.config/nvim/lua/core/snippets/'})<CR> | <cmd>lua Snacks.notify.info({'Reloaded Snippets'})<CR>",
+            "<cmd>lua require('luasnip.loaders.from_lua').load({paths = '~/.config/nvim/lua/core/snippets/'})<CR> | <cmd>lua Snacks.notify.info({'Reloaded Snippets'},{title = 'LuaSnip'})<CR>",
             { desc = "Reload Snippets" }
         )
     end,

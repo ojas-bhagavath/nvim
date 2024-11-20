@@ -114,7 +114,7 @@ return {
             vim.keymap.set(
                 "n",
                 "<leader>rl",
-                "<cmd>LspRestart<CR> | <cmd>lua Snacks.notify.info({'LSP Restarted!'})<CR>",
+                "<cmd>LspRestart<CR> | <cmd>lua Snacks.notify.info({'LSP Restarted!'},{title = 'LspConfig'})<CR>",
                 { noremap = true, silent = true, buffer = bufnr, desc = "Restart LSP" }
             )
         end
