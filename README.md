@@ -43,87 +43,48 @@ nvim
 
 ## Plugins
 
-### plugin-manager
-
-- [folke/lazy.nvim](https://github.com/folke/lazy.nvim)
-
-### code
-
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-  - [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer),
-  - [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path),
-  - [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp),
-  - [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline),
-  - [saadparwaiz1/cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip),
-- [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
-- [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs)
-- [kylechui/nvim-surround](https://github.com/kylechui/nvim-surround)
-
-### colorscheme
-
-- [folke/tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
-- [ellisonleao/gruvbox.nvim](https://github.com/ellisonleao/gruvbox.nvim)
-
-### editor
-
-- [mikavilpas/yazi.nvim](https://github.com/mikavilpas/yazi.nvim)
-- [folke/flash.nvim](https://github.com/folke/flash.nvim)
-- [folke/which-key.nvim](https://github.com/folke/which-key.nvim)
-- [echasnovski/mini.move](https://github.com/echasnovski/mini.move)
-- [echasnovski/mini.splitjoin](https://github.com/echasnovski/mini.splitjoin)
-
-### formatting
-
-- [stevearc/conform.nvim](https://github.com/stevearc/conform.nvim)
-
-### linting
-
-- [mfussenegger/nvim-lint](https://github.com/mfussenegger/nvim-lint)
-
-### lsp
-
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-- [williamboman/mason.nvim](https://github.com/williamboman/mason.nvim)
-- [williamboman/mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
-
-### treesitter
-
-- [nvim-treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-- [windwp/nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
-
-### ui
-
-- [rcarriga/nvim-notify](https://github.com/rcarriga/nvim-notify)
-- [b0o/incline.nvim](https://github.com/b0o/incline.nvim)
-- [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
-- [echasnovski/mini.indentscope](https://github.com/echasnovski/mini.indentscope)
-- [folke/noice.nvim](https://github.com/folke/noice.nvim)
-- [nvim-tree/nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
-- [echasnovski/mini.hipatterns](https://github.com/echasnovski/mini.hipatterns)
-- [echasnovski/mini.diff](https://github.com/echasnovski/mini.diff)
-- [nvimdev/dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
-- [MunifTanjim/nui.nvim](https://github.com/MunifTanjim/nui.nvim)
-- [akinsho/toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-- [stevearc/dressing.nvim](https://github.com/stevearc/dressing.nvim)
-
-### util
-
-- [Shatur/neovim-session-manager](https://github.com/Shatur/neovim-session-manager)
-- [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
-- [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- [jiaoshijie/undotree](https://github.com/jiaoshijie/undotree)
-- [chrisgrieser/nvim-spider](https://github.com/chrisgrieser/nvim-spider)
-- [echasnovski/mini.ai](https://github.com/echasnovski/mini.ai)
-- [echasnovski/mini.bracketed](https://github.com/echasnovski/mini.bracketed)
-- [echasnovski/mini.bufremove](https://github.com/echasnovski/mini.bufremove)
-
-### language-specific
-
-#### markdown
-
-- [iamcco/markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
-- [epwalsh/obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)
-
-#### latex
-
-- [lervag/vimtex](https://github.com/lervag/vimtex)
+- [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [cmp-buffer](https://github.com/hrsh7th/cmp-buffer),
+- [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline),
+- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp),
+- [cmp-path](https://github.com/hrsh7th/cmp-path),
+- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip),
+- [conform.nvim](https://github.com/stevearc/conform.nvim)
+- [dressing.nvim](https://github.com/stevearc/dressing.nvim)
+- [flash.nvim](https://github.com/folke/flash.nvim)
+- [grug-far.nvim](https://github.com/MagicDuck/grug-far.nvim)
+- [incline.nvim](https://github.com/b0o/incline.nvim)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim)
+- [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)
+- [mini.ai](https://github.com/echasnovski/mini.ai)
+- [mini.bracketed](https://github.com/echasnovski/mini.bracketed)
+- [mini.bufremove](https://github.com/echasnovski/mini.bufremove)
+- [mini.diff](https://github.com/echasnovski/mini.diff)
+- [mini.hipatterns](https://github.com/echasnovski/mini.hipatterns)
+- [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
+- [mini.move](https://github.com/echasnovski/mini.move)
+- [mini.splitjoin](https://github.com/echasnovski/mini.splitjoin)
+- [neovim-session-manager](https://github.com/Shatur/neovim-session-manager)
+- [noice.nvim](https://github.com/folke/noice.nvim)
+- [nui.nvim](https://github.com/MunifTanjim/nui.nvim)
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [nvim-lint](https://github.com/mfussenegger/nvim-lint)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [nvim-spider](https://github.com/chrisgrieser/nvim-spider)
+- [nvim-surround](https://github.com/kylechui/nvim-surround)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim-ts-autotag](https://github.com/windwp/nvim-ts-autotag)
+- [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons)
+- [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim)
+- [plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+- [snacks.nvim](https://github.com/folke/snacks.nvim)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
+- [undotree](https://github.com/jiaoshijie/undotree)
+- [vimtex](https://github.com/lervag/vimtex)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
+- [yazi.nvim](https://github.com/mikavilpas/yazi.nvim)
