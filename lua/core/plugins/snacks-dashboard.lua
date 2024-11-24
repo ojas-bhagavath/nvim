@@ -89,7 +89,13 @@ return {
                 },
             },
             sections = {
-                { section = "header" },
+                -- { section = "header" },
+                {
+                    section = "terminal",
+                    cmd = "cmatrix -B -C magenta -u 10",
+                    height = 10,
+                    padding = 3,
+                },
                 {
                     section = "keys",
                     gap = 1,
