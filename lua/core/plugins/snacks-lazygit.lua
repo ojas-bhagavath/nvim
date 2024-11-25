@@ -23,5 +23,21 @@ return {
             mode = { "n" },
             desc = "Lazygit",
         },
+        {
+            "<leader>gf",
+            function()
+                Snacks.lazygit.log_file()
+            end,
+            mode = { "n" },
+            desc = "Lazygit Current File History",
+        },
+        {
+            "<leader>gl",
+            function()
+                Snacks.lazygit.log()
+            end,
+            mode = { "n" },
+            desc = "Lazygit CWD Log",
+        },
     },
 }
