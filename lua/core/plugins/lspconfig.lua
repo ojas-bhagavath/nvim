@@ -10,8 +10,13 @@ return {
                 automatic_installation = true,
             },
         },
+        {
+            "folke/neodev.nvim",
+            opts = {},
+        },
     },
     config = function()
+        require("neodev").setup()
         local on_attach = function(client, bufnr)
             -- This is where a variable was first declared, or where a function is defined, etc.
             vim.keymap.set(
@@ -141,6 +146,9 @@ return {
             lua_ls = {
                 settings = {
                     Lua = {
+                        completion = {
+                            callSnippet = "Replace",
+                        },
                         diagnostics = {
                             globals = { "vim" },
                         },
