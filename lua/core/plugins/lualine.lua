@@ -17,6 +17,7 @@ return {
                 disabled_filetypes = {
                     statusline = {
                         "snacks_dashboard",
+                        "snacks_terminal",
                         "dashboard",
                         "alpha",
                         "starter",
