@@ -3,7 +3,6 @@ return {
     cmd = "Telescope",
     dependencies = {
         "nvim-lua/plenary.nvim",
-        "nvim-tree/nvim-web-devicons",
     },
     main = "telescope",
     opts = function()
@@ -55,15 +54,67 @@ return {
                     sort_lastused = true,
                     sort_mru = true,
                 },
+                command_history = {
+                    initial_mode = "normal",
+                    sort_lastused = true,
+                    sort_mru = true,
+                },
+                search_history = {
+                    initial_mode = "normal",
+                    sort_lastused = true,
+                    sort_mru = true,
+                },
             },
         }
     end,
     keys = {
-        { "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<CR>", desc = "fuzzy find files in cwd" },
-        { "<leader>fr", "<cmd>lua require('telescope.builtin').oldfiles()<CR>", desc = "fuzzy find recent files" },
-        { "<leader>fs", "<cmd>lua require('telescope.builtin').live_grep()<CR>", desc = "fuzzy find string in cwd" },
-        { "<leader>fg", "<cmd>lua require('telescope.builtin').grep_string()<CR>", desc = "fuzzy find string under the cursor" },
-        { "<leader>fc", "<cmd>lua require('telescope.builtin').command_history()<CR>", desc = "fuzzy find string command history" },
-        { "<leader><leader>", "<cmd>lua require('telescope.builtin').buffers()<CR>", desc = "fuzzy find buffers" },
+        {
+            "<leader>ff",
+            function()
+                require("telescope.builtin").find_files()
+            end,
+            mode = { "n" },
+            desc = "fuzzy find files in cwd",
+        },
+        {
+            "<leader>fr",
+            function()
+                require("telescope.builtin").oldfiles()
+            end,
+            mode = { "n" },
+            desc = "fuzzy find recent files",
+        },
+        {
+            "<leader>fs",
+            function()
+                require("telescope.builtin").live_grep()
+            end,
+            mode = { "n" },
+            desc = "fuzzy find string in cwd",
+        },
+        {
+            "<leader>fg",
+            function()
+                require("telescope.builtin").grep_string()
+            end,
+            mode = { "n", "v" },
+            desc = "fuzzy find string under the cursor",
+        },
+        {
+            "<leader>fc",
+            function()
+                require("telescope.builtin").command_history()
+            end,
+            mode = { "n" },
+            desc = "fuzzy find string command history",
+        },
+        {
+            "<leader><leader>",
+            function()
+                require("telescope.builtin").buffers()
+            end,
+            mode = { "n" },
+            desc = "fuzzy find buffers",
+        },
     },
 }
