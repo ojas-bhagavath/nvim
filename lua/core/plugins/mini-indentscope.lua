@@ -14,6 +14,7 @@ return {
                 "lazy",
                 "mason",
                 "notify",
+                "snacks_dashboard",
                 "snacks_notif",
                 "snacks_terminal",
                 "snacks_win",
