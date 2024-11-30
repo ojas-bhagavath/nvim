@@ -17,5 +17,13 @@ return {
             mode = { "n" },
             desc = "Dismiss All Notifications",
         },
+        {
+            "<leader>uh",
+            function()
+                Snacks.notifier.show_history()
+            end,
+            mode = { "n" },
+            desc = "Show Notification History",
+        },
     },
 }

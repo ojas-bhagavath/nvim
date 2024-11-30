@@ -59,11 +59,11 @@ return {
                         end,
                     },
                     {
-                        icon = " ",
-                        desc = "Open LaTeX Folder",
-                        key = "t",
+                        icon = "󰩪 ",
+                        desc = "Open Vaults",
+                        key = "v",
                         action = function()
-                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/LaTeX/"))
+                            require("telescope.builtin").find_files({ hidden = false, search_dirs = { vim.fn.expand("$HOME/Stuff/Vaults/") } })
                         end,
                     },
                     {
@@ -93,8 +93,8 @@ return {
                 {
                     section = "terminal",
                     cmd = "cmatrix -B -C magenta -u 10",
-                    height = 10,
-                    padding = 3,
+                    height = 9,
+                    padding = 2,
                 },
                 {
                     section = "keys",
@@ -105,6 +105,16 @@ return {
                     section = "startup",
                 },
             },
+        },
+    },
+    keys = {
+        {
+            "<leader>ud",
+            function()
+                Snacks.dashboard.open()
+            end,
+            mode = { "n" },
+            desc = "Open Dashboard",
         },
     },
 }
