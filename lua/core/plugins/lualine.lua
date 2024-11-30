@@ -34,9 +34,6 @@ return {
                 lualine_a = {
                     {
                         "mode",
-                        fmt = function(str)
-                            return str:sub(1, 3)
-                        end,
                         separator = { right = "", left = "" },
                     },
                 },
