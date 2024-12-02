@@ -8,13 +8,49 @@ return {
     opts = {
         workspaces = {
             {
-                name = "Academics",
-                path = "~/Stuff/Vaults/academics/",
+                name = "Academic",
+                path = "~/Stuff/Vaults/academic/",
             },
             {
-                name = "Other",
+                name = "Personal",
                 path = "~/Stuff/Vaults/personal/",
             },
+        },
+        mappings = {
+            ["<localleader>o"] = {
+                action = function()
+                    return require("obsidian").util.smart_action()
+                end,
+                opts = { expr = true, buffer = true },
+            },
+            ["<CR>"] = {
+                action = function()
+                    return require("obsidian").util.smart_action()
+                end,
+                opts = { expr = true, buffer = true },
+            },
+            ["<localleader>x"] = {
+                action = function()
+                    return require("obsidian").util.toggle_checkbox()
+                end,
+                opts = { buffer = true },
+            },
+        },
+        follow_url_func = function(url)
+            vim.fn.jobstart({ "xdg-open", url })
+        end,
+        follow_img_func = function(img)
+            vim.fn.jobstart({ "nsxiv", img })
+        end,
+        attachments = {
+            img_folder = "src/",
+            img_name_func = function()
+                return string.format("%s-", os.time())
+            end,
+            img_text_func = function(client, path)
+                path = client:vault_relative_path(path) or path
+                return string.format("![%s](%s)", path.name, path)
+            end,
         },
     },
 }
