@@ -5,8 +5,8 @@ vim.g.markdown_recommended_style = 0
 
 vim.opt.autochdir = true
 vim.opt.autoindent = true
-vim.opt.autowrite = true
 vim.opt.autoread = true
+vim.opt.autowrite = true
 vim.opt.backspace = "indent,eol,start"
 vim.opt.breakindent = true
 vim.opt.clipboard = "unnamedplus"

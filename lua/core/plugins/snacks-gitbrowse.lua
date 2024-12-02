@@ -3,8 +3,9 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-        quickfile = { enabled = false },
-        statuscolumn = { enabled = true },
+        gitbrowse = {
+            notify = true,
+        },
     },
     keys = {
         {

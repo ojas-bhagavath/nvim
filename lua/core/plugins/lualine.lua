@@ -19,9 +19,8 @@ return {
                         "snacks_dashboard",
                         "snacks_terminal",
                         "dashboard",
-                        "alpha",
-                        "starter",
                         "yazi",
+                        "mason",
                     },
                 },
                 component_separators = "",
@@ -34,7 +33,10 @@ return {
                 lualine_a = {
                     {
                         "mode",
-                        separator = { right = "", left = "" },
+                        separator = {
+                            right = "",
+                            left = "",
+                        },
                     },
                 },
                 lualine_b = {
@@ -45,7 +47,10 @@ return {
                             modified = " ",
                             removed = " ",
                         },
-                        separator = { left = "", right = "" },
+                        separator = {
+                            left = "",
+                            right = "",
+                        },
                         on_click = function()
                             Snacks.lazygit.open()
                         end,
@@ -58,7 +63,10 @@ return {
                             hint = " ",
                             info = " ",
                         },
-                        separator = { left = "", right = "" },
+                        separator = {
+                            left = "",
+                            right = "",
+                        },
                         on_click = function()
                             vim.cmd("LspInfo")
                         end,
@@ -79,7 +87,23 @@ return {
                         },
                     },
                 },
-                lualine_x = {},
+                lualine_x = {
+                    {
+                        function()
+                            local starts = vim.fn.line("v")
+                            local ends = vim.fn.line(".")
+                            local count = starts <= ends and ends - starts + 1 or starts - ends + 1
+                            local wc = vim.fn.wordcount()
+                            return count .. ":" .. wc["visual_chars"]
+                        end,
+                        cond = function()
+                            return vim.fn.mode():find("[Vv]") ~= nil
+                        end,
+                    },
+                    {
+                        "searchcount",
+                    },
+                },
 
                 lualine_y = {
                     {
@@ -89,16 +113,13 @@ return {
                             right = "",
                         },
                     },
-                    {
-                        "searchcount",
-                    },
                 },
                 lualine_z = {
                     {
                         "progress",
                         padding = {
                             left = 0,
-                            right = 0,
+                            right = 1,
                         },
                         separator = {
                             left = "",
