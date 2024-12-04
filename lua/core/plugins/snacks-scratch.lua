@@ -16,7 +16,7 @@ return {
         {
             "<leader>.",
             function()
-                Snacks.scratch()
+                Snacks.scratch.open()
             end,
             desc = "Toggle Scratch Buffer",
         },
