@@ -9,7 +9,9 @@ return {
         config = function()
             local cmp = require("cmp")
             cmp.setup({
-                completion = { completeopt = "menu,menuone,preview,noselect" },
+                completion = {
+                    completeopt = "menu,menuone,preview,noselect",
+                },
                 snippet = {
                     expand = function(args)
                         require("luasnip").lsp_expand(args.body)
@@ -28,6 +30,7 @@ return {
                 }),
                 sources = cmp.config.sources({
                     { name = "luasnip" }, -- snippets
+                    { name = "lazydev" }, -- lazydev
                     { name = "nvim_lsp" }, -- lsp
                     { name = "buffer" }, -- text within current buffer
                     { name = "path" }, -- file system paths
