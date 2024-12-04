@@ -79,7 +79,7 @@ return {
                 require("telescope.builtin").find_files()
             end,
             mode = { "n" },
-            desc = "fuzzy find files in cwd",
+            desc = "Fuzzy Find Files In Cwd",
         },
         {
             "<leader>fr",
@@ -87,7 +87,7 @@ return {
                 require("telescope.builtin").oldfiles()
             end,
             mode = { "n" },
-            desc = "fuzzy find recent files",
+            desc = "Fuzzy Find Recent Files",
         },
         {
             "<leader>fs",
@@ -95,7 +95,7 @@ return {
                 require("telescope.builtin").live_grep()
             end,
             mode = { "n" },
-            desc = "fuzzy find string in cwd",
+            desc = "Fuzzy Find String In Cwd",
         },
         {
             "<leader>fg",
@@ -103,7 +103,7 @@ return {
                 require("telescope.builtin").grep_string()
             end,
             mode = { "n", "v" },
-            desc = "fuzzy find string under the cursor",
+            desc = "Fuzzy Find String Under The Cursor",
         },
         {
             "<leader>fc",
@@ -111,7 +111,15 @@ return {
                 require("telescope.builtin").command_history()
             end,
             mode = { "n" },
-            desc = "fuzzy find string command history",
+            desc = "Fuzzy Find String Command History",
+        },
+        {
+            "<leader>fk",
+            function()
+                require("telescope.builtin").keymaps()
+            end,
+            mode = { "n" },
+            desc = "Fuzzy Find Keymaps",
         },
         {
             "<leader><leader>",
@@ -119,7 +127,7 @@ return {
                 require("telescope.builtin").buffers()
             end,
             mode = { "n" },
-            desc = "fuzzy find buffers",
+            desc = "Fuzzy Find Buffers",
         },
     },
 }
