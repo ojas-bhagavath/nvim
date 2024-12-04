@@ -14,15 +14,21 @@ return {
     },
     main = "conform",
     opts = {
+        formatters = {
+            ["tex-fmt"] = {
+                args = { "-s", "--keep", "--tab=4" },
+            },
+        },
         formatters_by_ft = {
             bash = { "shfmt" },
-            html = { "prettier" },
             css = { "prettier" },
+            html = { "prettier" },
             javascript = { "prettier" },
             lua = { "stylua" },
             markdown = { "prettier" },
             python = { "isort", "black" },
             shell = { "shfmt" },
+            tex = { "tex-fmt" },
             toml = { "taplo" },
         },
         format_on_save = function(bufnr)
