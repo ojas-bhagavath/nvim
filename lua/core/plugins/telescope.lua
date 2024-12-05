@@ -25,9 +25,12 @@ return {
                 sorting_strategy = "ascending",
                 layout_strategy = "horizontal",
                 layout_config = {
-                    height = 0.8,
-                    prompt_position = "top",
-                    width = 0.8,
+                    horizontal = {
+                        height = 0.8,
+                        preview_width = 0.6,
+                        prompt_position = "top",
+                        width = 0.8,
+                    },
                 },
                 path_display = { "smart" },
                 mappings = {
