@@ -48,7 +48,9 @@ return {
                         icon = " ",
                         desc = "Restore Last Session",
                         key = "s",
-                        action = ":SessionManager load_last_session",
+                        action = function()
+                            require("persistence").load({ last = true })
+                        end,
                     },
                     {
                         icon = " ",
