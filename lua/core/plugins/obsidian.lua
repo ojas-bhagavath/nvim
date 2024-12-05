@@ -6,6 +6,9 @@ return {
     },
     main = "obsidian",
     opts = {
+        ui = {
+            enable = false,
+        },
         workspaces = {
             {
                 name = "Academic",

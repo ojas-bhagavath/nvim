@@ -44,6 +44,7 @@ nvim
 ## Plugins
 
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [OXY2DEV/markview.nvim](https://github.com/OXY2DEV/markview.nvim)
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer),
 - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline),
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp),
