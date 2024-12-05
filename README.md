@@ -67,6 +67,7 @@ nvim
 - [mini.icons](https://github.com/echasnovski/mini.icons)
 - [mini.indentscope](https://github.com/echasnovski/mini.indentscope)
 - [mini.move](https://github.com/echasnovski/mini.move)
+- [mini.operators](https://github.com/echasnovski/mini.operators)
 - [mini.pairs](https://github.com/echasnovski/mini.pairs)
 - [mini.splitjoin](https://github.com/echasnovski/mini.splitjoin)
 - [neovim-session-manager](https://github.com/Shatur/neovim-session-manager)
