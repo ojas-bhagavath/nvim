@@ -1,14 +1,20 @@
 return {
     "folke/persistence.nvim",
-    lazy = false,
     opts = {},
     keys = {
         {
             "<leader>qs",
             function()
+                require("persistence").load()
+            end,
+            desc = "Load Session (CWD)",
+        },
+        {
+            "<leader>qS",
+            function()
                 require("persistence").select()
             end,
-            desc = "Session Select",
+            desc = "Select Session",
         },
         {
             "<leader>ql",
