@@ -61,11 +61,25 @@ return {
                         end,
                     },
                     {
+                        key = "D",
+                        hidden = true,
+                        action = function()
+                            require("telescope.builtin").find_files({ search_dirs = { vim.fn.expand("$HOME/.dotfiles/") } })
+                        end,
+                    },
+                    {
                         icon = "󰩪 ",
                         desc = "Open Vaults",
                         key = "v",
                         action = function()
-                            require("telescope.builtin").find_files({ hidden = false, search_dirs = { vim.fn.expand("$HOME/Stuff/Vaults/") } })
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Vaults/"))
+                        end,
+                    },
+                    {
+                        key = "V",
+                        hidden = true,
+                        action = function()
+                            require("telescope.builtin").find_files({ search_dirs = { vim.fn.expand("$HOME/Stuff/Vaults/") } })
                         end,
                     },
                     {
@@ -74,6 +88,13 @@ return {
                         key = "c",
                         action = function()
                             require("yazi").yazi(nil, vim.fn.expand("$HOME/.config/nvim/"))
+                        end,
+                    },
+                    {
+                        key = "C",
+                        hidden = true,
+                        action = function()
+                            require("telescope.builtin").find_files({ search_dirs = { vim.fn.expand("$HOME/.config/nvim/") } })
                         end,
                     },
                     {
