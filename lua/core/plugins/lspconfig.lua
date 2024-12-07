@@ -31,7 +31,7 @@ return {
                 "n",
                 "<leader>ld",
                 require("telescope.builtin").lsp_definitions,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP definitions" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Definitions" }
             )
 
             -- Find references for the word under your cursor.
@@ -39,7 +39,7 @@ return {
                 "n",
                 "<leader>lR",
                 require("telescope.builtin").lsp_references,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP references" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP References" }
             )
 
             -- Jump to the implementation of the word under your cursor.
@@ -48,7 +48,7 @@ return {
                 "n",
                 "<leader>li",
                 require("telescope.builtin").lsp_implementations,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP implementations" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Implementations" }
             )
 
             -- Jump to the type of the word under your cursor.
@@ -58,7 +58,7 @@ return {
                 "n",
                 "<leader>lt",
                 require("telescope.builtin").lsp_type_definitions,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP type definition" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Type Definition" }
             )
 
             -- Fuzzy find all the symbols in your current document.
@@ -67,7 +67,7 @@ return {
                 "n",
                 "<leader>ls",
                 require("telescope.builtin").lsp_document_symbols,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP document symbols" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Document Symbols" }
             )
 
             -- Fuzzy find all the symbols in your current workspace.
@@ -76,12 +76,12 @@ return {
                 "n",
                 "<leader>lS",
                 require("telescope.builtin").lsp_dynamic_workspace_symbols,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP workspace symbols" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Workspace Symbols" }
             )
 
             -- WARN: This is not Goto Definition, this is Goto Declaration.
             --  For example, in C this would take you to the header.
-            vim.keymap.set("n", "<leader>lD", vim.lsp.buf.declaration, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP declarations" })
+            vim.keymap.set("n", "<leader>lD", vim.lsp.buf.declaration, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Declarations" })
 
             -- Execute a code action, usually your cursor needs to be on top of an error
             -- or a suggestion from your LSP for this to activate.
@@ -89,40 +89,35 @@ return {
                 { "n", "x" },
                 "<leader>ca",
                 vim.lsp.buf.code_action,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP code actions" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Code Actions" }
             )
 
             -- Rename the variable under your cursor.
             --  Most Language Servers support renaming across files, etc.
-            vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { noremap = true, silent = true, buffer = bufnr, desc = "LSP rename" })
+            vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { noremap = true, silent = true, buffer = bufnr, desc = "LSP Rename" })
 
             -- Display all the diagnostics in the current line in a small neat window.
-            vim.keymap.set("n", "<leader>xx", vim.diagnostic.open_float, { noremap = true, silent = true, buffer = bufnr, desc = "Show line diagnostics" })
+            vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float, { noremap = true, silent = true, buffer = bufnr, desc = "Show Line Diagnostics" })
 
             -- Fuzzy find all the diagnostics in the current buffer.
             vim.keymap.set(
                 "n",
-                "<leader>xb",
+                "<leader>db",
                 "<cmd>Telescope diagnostics bufnr=0<CR>",
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show buffer diagnostics" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show Buffer Diagnostics" }
             )
 
             -- Fuzzy find all the diagnostics in the current workspace.
             vim.keymap.set(
                 "n",
-                "<leader>xw",
+                "<leader>dw",
                 require("telescope.builtin").diagnostics,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show workspace diagnostics" }
+                { noremap = true, silent = true, buffer = bufnr, desc = "Show Workspace Diagnostics" }
             )
 
             -- Display the documentation of the object you  are hovering on. Pressing K in the normal mode does the same thing as well.
             -- Just move to get rid of it, press K to enter inside the documentation window and explore there.
-            vim.keymap.set(
-                "n",
-                "<leader>lh",
-                vim.lsp.buf.hover,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show documentation of the hovered object" }
-            )
+            vim.keymap.set("n", "<leader>lh", vim.lsp.buf.hover, { noremap = true, silent = true, buffer = bufnr, desc = "Hovered Object Documentation" })
 
             -- Restart LSP.
             vim.keymap.set(

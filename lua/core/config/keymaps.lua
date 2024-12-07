@@ -48,3 +48,7 @@ vim.keymap.set("o", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev Se
 vim.keymap.set("i", ",", ",<c-g>u")
 vim.keymap.set("i", ".", ".<c-g>u")
 vim.keymap.set("i", ";", ";<c-g>u")
+
+-- lua
+vim.keymap.set("n", "<leader>xs", "<cmd>source %<CR>", { desc = "Source Current File" })
+vim.keymap.set({ "n", "v" }, "<leader>xx", ":.lua<CR>", { desc = "Execute The Line" })

@@ -16,7 +16,7 @@ return {
         vim.api.nvim_create_autocmd("User", {
             pattern = "VeryLazy",
             callback = function()
-                Snacks.toggle.diagnostics({ name = "Diagnostics" }):map("<leader>ox")
+                Snacks.toggle.diagnostics({ name = "Diagnostics" }):map("<leader>od")
                 Snacks.toggle.inlay_hints({ name = "Inlay Hints" }):map("<leader>oh")
                 Snacks.toggle.line_number({ name = "Number" }):map("<leader>on")
                 Snacks.toggle.treesitter({ name = "Treesitter" }):map("<leader>ot")
