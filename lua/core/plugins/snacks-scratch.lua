@@ -18,7 +18,7 @@ return {
             function()
                 Snacks.scratch.open()
             end,
-            desc = "Toggle Scratch Buffer",
+            desc = "Open Scratch Buffer",
         },
     },
 }
