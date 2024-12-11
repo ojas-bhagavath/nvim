@@ -9,6 +9,9 @@ return {
         config = function()
             local cmp = require("cmp")
             cmp.setup({
+                experimental = {
+                    ghost_text = true,
+                },
                 completion = {
                     completeopt = "menu,menuone,preview,noselect",
                 },
