@@ -6,7 +6,7 @@ return {
         scope = {
             enabled = true,
             animate = {
-                easing = "outExp",
+                easing = "inExpo",
             },
             treesitter = {
                 blocks = {
