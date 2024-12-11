@@ -45,6 +45,11 @@ return {
         follow_img_func = function(img)
             vim.fn.jobstart({ "nsxiv", img })
         end,
+        templates = {
+            folder = "templates",
+            date_format = "%Y%m%d",
+            time_format = "%H:%M",
+        },
         attachments = {
             img_folder = "src/",
             img_name_func = function()

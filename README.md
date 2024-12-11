@@ -45,11 +45,11 @@ nvim
 
 - [LuaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [OXY2DEV/markview.nvim](https://github.com/OXY2DEV/markview.nvim)
-- [cmp-buffer](https://github.com/hrsh7th/cmp-buffer),
-- [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline),
-- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp),
-- [cmp-path](https://github.com/hrsh7th/cmp-path),
-- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip),
+- [cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
+- [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
+- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [cmp-path](https://github.com/hrsh7th/cmp-path)
+- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
 - [conform.nvim](https://github.com/stevearc/conform.nvim)
 - [dressing.nvim](https://github.com/stevearc/dressing.nvim)
 - [flash.nvim](https://github.com/folke/flash.nvim)

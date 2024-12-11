@@ -3,14 +3,14 @@ return {
     opts = {},
     keys = {
         {
-            "<leader>qs",
+            "<leader>qS",
             function()
                 require("persistence").load()
             end,
             desc = "Load Session (CWD)",
         },
         {
-            "<leader>qS",
+            "<leader>qs",
             function()
                 require("persistence").select()
             end,
