@@ -14,6 +14,9 @@ return {
     config = function()
         vim.diagnostic.config({
             virtual_text = false,
+            float = {
+                source = true,
+            },
         })
         vim.api.nvim_create_autocmd("LspProgress", {
             ---@param ev {data: {client_id: integer, params: lsp.ProgressParams}}
