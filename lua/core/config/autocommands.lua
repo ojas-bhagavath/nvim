@@ -120,3 +120,11 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
         end
     end,
 })
+
+-- open a floating diagnostic window showing line diagnostic upon hovering in normal mode
+vim.api.nvim_create_autocmd({ "CursorHold" }, {
+    group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
+    callback = function()
+        vim.diagnostic.open_float(nil, { focus = false })
+    end,
+})
