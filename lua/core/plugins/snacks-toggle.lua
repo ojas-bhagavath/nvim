@@ -29,6 +29,7 @@ return {
                 Snacks.toggle.treesitter({ name = "Treesitter" }):map("<leader>ot")
                 Snacks.toggle.words():map("<leader>oW")
                 Snacks.toggle.zen():map("<leader>oz")
+                Snacks.toggle.zoom():map("<leader>oZ")
             end,
         })
     end,
