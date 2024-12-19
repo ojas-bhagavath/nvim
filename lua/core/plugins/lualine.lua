@@ -116,22 +116,13 @@ return {
                 },
                 lualine_z = {
                     {
-                        "progress",
-                        padding = {
-                            left = 0,
-                            right = 1,
-                        },
-                        separator = {
-                            left = "",
-                        },
-                    },
-                    {
                         "location",
                         padding = {
                             left = 0,
                             right = 0,
                         },
                         separator = {
+                            left = "",
                             right = "",
                         },
                     },

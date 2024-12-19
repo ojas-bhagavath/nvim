@@ -51,7 +51,7 @@ return {
             time_format = "%H:%M",
         },
         attachments = {
-            img_folder = "src/",
+            img_folder = "attachments/",
             img_name_func = function()
                 return string.format("%s-", os.time())
             end,
