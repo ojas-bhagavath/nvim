@@ -3,13 +3,7 @@ return {
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     build = ":MasonUpdate",
     dependencies = {
-        "hrsh7th/cmp-nvim-lsp",
-        {
-            "williamboman/mason-lspconfig.nvim",
-            opts = {
-                automatic_installation = true,
-            },
-        },
+        { "williamboman/mason-lspconfig.nvim" },
     },
     config = function()
         vim.diagnostic.config({
@@ -146,7 +140,6 @@ return {
         end
 
         local capabilities = vim.lsp.protocol.make_client_capabilities()
-        capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
         local servers = {
             bash_ls = {},
@@ -171,6 +164,8 @@ return {
         }
 
         require("mason-lspconfig").setup({
+            ensure_installed = {},
+            automatic_installation = true,
             handlers = {
                 function(server_name)
                     local server = servers[server_name] or {}
