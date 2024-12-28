@@ -1,7 +1,7 @@
 return {
     "saghen/blink.cmp",
     version = "*",
-    events = { "InsertEnter", "CmdEnter" },
+    event = { "InsertEnter", "CmdlineEnter" },
     opts = {
         keymap = {
             preset = "default",
@@ -14,6 +14,7 @@ return {
             ["<C-h>"] = { "snippet_backward", "fallback" },
             cmdline = {
                 ["<C-l>"] = { "select_and_accept", "fallback" },
+                ["<C-l>"] = { "select_and_accept", "snippet_forward", "fallback" },
                 ["<C-k>"] = { "select_prev", "fallback" },
                 ["<C-j>"] = { "select_next", "fallback" },
             },
@@ -22,6 +23,11 @@ return {
             use_nvim_cmp_as_default = true,
             nerd_font_variant = "mono",
         },
+        completion = {
+            menu = { border = "rounded" },
+            documentation = { window = { border = "rounded" } },
+        },
+        signature = { window = { border = "rounded" } },
         sources = {
             default = {
                 "luasnip",
