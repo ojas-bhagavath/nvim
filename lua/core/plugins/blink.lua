@@ -14,7 +14,6 @@ return {
             ["<C-h>"] = { "snippet_backward", "fallback" },
             cmdline = {
                 ["<C-l>"] = { "select_and_accept", "fallback" },
-                ["<C-l>"] = { "select_and_accept", "snippet_forward", "fallback" },
                 ["<C-k>"] = { "select_prev", "fallback" },
                 ["<C-j>"] = { "select_next", "fallback" },
             },
