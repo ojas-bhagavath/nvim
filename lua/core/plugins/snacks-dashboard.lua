@@ -19,11 +19,18 @@ return {
                         desc = "New File",
                         key = "n",
                         action = function()
-                            vim.ui.input({ prompt = "Enter Filename" }, function(str)
-                                if str ~= "" then
-                                    vim.cmd("ene | w " .. str .. " | startinsert")
-                                elseif str == "" then
-                                    vim.cmd("ene | startinsert")
+                            vim.ui.input({
+                                prompt = "Enter Filename",
+                                icon = " ",
+                                icon_hl = "SnacksInputIcon",
+                                expand = true,
+                            }, function(str)
+                                if str ~= nil then
+                                    if str ~= "" then
+                                        vim.cmd("ene | w " .. str .. " | startinsert")
+                                    elseif str == "" then
+                                        vim.cmd("ene | startinsert")
+                                    end
                                 end
                             end)
                         end,
