@@ -5,6 +5,7 @@ return {
     s({ trig = "mid", snippetType = "autosnippet" }, t("\\mid"), { condition = in_mathzone }),
     s({ trig = "sim", snippetType = "autosnippet" }, t("\\sim"), { condition = in_mathzone }),
     s({ trig = "~-", snippetType = "autosnippet" }, t("\\simeq"), { condition = in_mathzone }),
+    s({ trig = "~=", snippetType = "autosnippet" }, t("\\cong"), { condition = in_mathzone }),
     s({ trig = "<=", snippetType = "autosnippet" }, t("\\leq"), { condition = in_mathzone }),
     s({ trig = ">=", snippetType = "autosnippet" }, t("\\geq"), { condition = in_mathzone }),
     s(
