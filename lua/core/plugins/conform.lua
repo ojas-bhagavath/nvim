@@ -16,7 +16,12 @@ return {
     opts = {
         formatters = {
             ["tex-fmt"] = {
-                args = { "-s", "--keep", "--tab=4" },
+                inherit = true,
+                prepend_args = { "-s", "--keep", "--tab=4" },
+            },
+            ["prettier"] = {
+                inherit = true,
+                prepend_args = { "--tab-width=4" },
             },
         },
         formatters_by_ft = {

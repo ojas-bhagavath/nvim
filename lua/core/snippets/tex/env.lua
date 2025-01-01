@@ -63,4 +63,6 @@ return {
     }),
 
     s({ trig = "-", snippetType = "autosnippet" }, { t("\\item ") }, { condition = conds.line_begin * in_list }),
+
+    s({ trig = '"', snippetType = "autosnippet" }, fmta("\\text{<>}", { i(1) }), { condition = in_mathzone }),
 }
