@@ -15,6 +15,10 @@ return {
     main = "conform",
     opts = {
         formatters = {
+            ["black"] = {
+                inherit = true,
+                prepend_args = { "--fast" },
+            },
             ["tex-fmt"] = {
                 inherit = true,
                 prepend_args = { "-s", "--keep", "--tab=4" },
@@ -39,7 +43,7 @@ return {
         format_on_save = function(bufnr)
             local disable_filetypes = { c = true, cpp = true }
             return {
-                timeout_ms = 500,
+                timeout_ms = 5000,
                 lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
             }
         end,
