@@ -3,6 +3,7 @@ return {
     version = "*",
     event = { "InsertEnter", "CmdlineEnter" },
     opts = {
+        snippets = { preset = "luasnip" },
         keymap = {
             preset = "default",
             ["<C-e>"] = { "hide" },
@@ -30,7 +31,6 @@ return {
         signature = { window = { border = "rounded" } },
         sources = {
             default = {
-                "luasnip",
                 "snippets",
                 "lsp",
                 "buffer",

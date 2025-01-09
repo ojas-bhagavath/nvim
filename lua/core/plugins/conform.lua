@@ -21,7 +21,10 @@ return {
             },
             ["tex-fmt"] = {
                 inherit = true,
-                prepend_args = { "-s", "--keep", "--tab=4" },
+                prepend_args = {
+                    "--nowrap",
+                    "--tabsize=4",
+                },
             },
             ["prettier"] = {
                 inherit = true,
