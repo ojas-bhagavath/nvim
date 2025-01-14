@@ -30,6 +30,11 @@ return {
         },
         signature = { window = { border = "rounded" } },
         sources = {
+            providers = {
+                snippets = {
+                    score_offset = 100,
+                },
+            },
             default = {
                 "snippets",
                 "lsp",
