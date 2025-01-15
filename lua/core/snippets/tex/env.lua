@@ -7,7 +7,7 @@ local function in_list()
 end
 return {
     s(
-        { trig = "init", snippetType = "autosnippet" },
+        { trig = "init" },
         fmta(
             [[
 \documentclass[<>]{<>}
@@ -41,8 +41,7 @@ return {
                 i(6, "Ojas G Bhagavath"),
                 i(7),
             }
-        ),
-        { condition = conds.line_begin }
+        )
     ),
 
     s(
@@ -64,5 +63,5 @@ return {
 
     s({ trig = "-", snippetType = "autosnippet" }, { t("\\item ") }, { condition = conds.line_begin * in_list }),
 
-    s({ trig = '"', snippetType = "autosnippet" }, fmta("\\text{<>}", { i(1) }), { condition = in_mathzone }),
+    s({ trig = "tt", snippetType = "snippet" }, fmta("\\text{<>}", { i(1) }), { condition = in_mathzone }),
 }
