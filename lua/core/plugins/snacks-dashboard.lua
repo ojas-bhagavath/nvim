@@ -40,7 +40,7 @@ return {
                         desc = "Find Files",
                         key = "f",
                         action = function()
-                            require("telescope.builtin").find_files()
+                            Snacks.picker.files()
                         end,
                     },
                     {
@@ -48,7 +48,7 @@ return {
                         desc = "Recent Files",
                         key = "r",
                         action = function()
-                            require("telescope.builtin").oldfiles()
+                            Snacks.picker.recent()
                         end,
                     },
                     {
@@ -71,7 +71,7 @@ return {
                         key = "D",
                         hidden = true,
                         action = function()
-                            require("telescope.builtin").find_files({ search_dirs = { vim.fn.expand("$HOME/.dotfiles/") } })
+                            Snacks.picker.files({ cwd = vim.fn.expand("$HOME/.dotfiles/") })
                         end,
                     },
                     {
@@ -86,7 +86,7 @@ return {
                         key = "V",
                         hidden = true,
                         action = function()
-                            require("telescope.builtin").find_files({ search_dirs = { vim.fn.expand("$HOME/Stuff/Vaults/") } })
+                            Snacks.picker.files({ cwd = "$HOME/Stuff/Vaults/" })
                         end,
                     },
                     {
@@ -101,7 +101,7 @@ return {
                         key = "C",
                         hidden = true,
                         action = function()
-                            require("telescope.builtin").find_files({ search_dirs = { vim.fn.expand("$HOME/.config/nvim/") } })
+                            Snacks.picker.files({ cwd = "$HOME/.config/nvim/" })
                         end,
                     },
                     {
