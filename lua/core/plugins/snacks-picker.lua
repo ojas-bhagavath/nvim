@@ -3,12 +3,7 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-        picker = {
-            files = {
-                finder = "files",
-                hidden = true,
-            },
-        },
+        picker = {},
     },
     keys = {
         {
