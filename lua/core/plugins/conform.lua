@@ -35,7 +35,7 @@ return {
             bash = { "shfmt" },
             css = { "prettier" },
             html = { "prettier" },
-            htmlangular = { "prettier" },
+            htmlhugo = { "prettier" },
             javascript = { "prettier" },
             lua = { "stylua" },
             markdown = { "prettier" },
