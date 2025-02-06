@@ -35,17 +35,18 @@ return {
             bash = { "shfmt" },
             css = { "prettier" },
             html = { "prettier" },
-            htmlhugo = { "prettier" },
+            -- htmlhugo = { "prettier" },
             javascript = { "prettier" },
+            json = { "prettier" },
             lua = { "stylua" },
-            markdown = { "prettier" },
+            -- markdown = { "prettier" },
             python = { "isort", "black" },
             shell = { "shfmt" },
             tex = { "tex-fmt" },
             toml = { "taplo" },
         },
         format_on_save = function(bufnr)
-            local disable_filetypes = { c = true, cpp = true }
+            local disable_filetypes = { c = true, cpp = true, markdown = true }
             return {
                 timeout_ms = 5000,
                 lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
