@@ -12,8 +12,6 @@ return {
                 "bash",
                 "css",
                 "gitignore",
-                "go",
-                "gotmpl",
                 "html",
                 "javascript",
                 "json",

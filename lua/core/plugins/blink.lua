@@ -3,6 +3,13 @@ return {
     version = "*",
     event = { "InsertEnter", "CmdlineEnter" },
     opts = {
+        cmdline = {
+            keymap = {
+                ["<C-y>"] = { "select_and_accept", "fallback" },
+                ["<C-k>"] = { "select_prev", "fallback" },
+                ["<C-j>"] = { "select_next", "fallback" },
+            },
+        },
         snippets = { preset = "luasnip" },
         keymap = {
             preset = "default",
@@ -14,11 +21,6 @@ return {
             ["<C-f>"] = { "scroll_documentation_down", "fallback" },
             ["<C-l>"] = { "snippet_forward", "fallback" },
             ["<C-h>"] = { "snippet_backward", "fallback" },
-            cmdline = {
-                ["<C-y>"] = { "select_and_accept", "fallback" },
-                ["<C-k>"] = { "select_prev", "fallback" },
-                ["<C-j>"] = { "select_next", "fallback" },
-            },
         },
         appearance = {
             use_nvim_cmp_as_default = true,
@@ -28,7 +30,10 @@ return {
             menu = { border = "rounded" },
             documentation = { window = { border = "rounded" } },
         },
-        signature = { window = { border = "rounded" } },
+        signature = {
+            enabled = true,
+            window = { border = "rounded" },
+        },
         sources = {
             providers = {
                 snippets = {

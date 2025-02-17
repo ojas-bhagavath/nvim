@@ -49,6 +49,7 @@ return {
             shell = { "shfmt" },
             tex = { "tex-fmt" },
             toml = { "taplo" },
+            yaml = { "prettier" },
         },
         format_on_save = function(bufnr)
             local disable_filetypes = { c = true, cpp = true, markdown = true }
