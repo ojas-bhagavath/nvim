@@ -19,7 +19,6 @@ return {
             { "<leader>b", group = "buffer", icon = "" },
             { "<leader>c", group = "code", icon = "" },
             { "<leader>d", group = "diagnostics", icon = "" },
-            { "<leader>e", group = "yazi", icon = "󰇥" },
             { "<leader>f", group = "file", icon = "" },
             { "<leader>g", group = "git", icon = "" },
             { "<leader>l", group = "lsp", icon = "" },

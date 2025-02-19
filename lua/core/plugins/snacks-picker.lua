@@ -3,7 +3,32 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-        picker = {},
+        picker = {
+            sources = {
+                explorer = {
+                    hidden = true,
+                },
+                files = {
+                    hidden = true,
+                },
+            },
+            layouts = {
+                default = {
+                    default = {
+                        width = 0.8,
+                        min_width = 0,
+                        height = 0.8,
+                        min_height = 0,
+                    },
+                    vertical = {
+                        width = 0.8,
+                        min_width = 0,
+                        height = 0.8,
+                        min_height = 0,
+                    },
+                },
+            },
+        },
     },
     keys = {
         {
