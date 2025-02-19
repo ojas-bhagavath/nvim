@@ -80,4 +80,3 @@ nvim
 - [undotree](https://github.com/jiaoshijie/undotree)
 - [vimtex](https://github.com/lervag/vimtex)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
-- [yazi.nvim](https://github.com/mikavilpas/yazi.nvim)
