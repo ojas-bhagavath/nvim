@@ -64,7 +64,7 @@ return {
                         desc = "Open Dotfiles",
                         key = "d",
                         action = function()
-                            require("yazi").yazi(nil, vim.fn.expand("$HOME/.dotfiles/"))
+                            Snacks.picker.explorer({ cwd = vim.fn.expand("$HOME/.dotfiles/") })
                         end,
                     },
                     {
@@ -79,7 +79,7 @@ return {
                         desc = "Open Vaults",
                         key = "v",
                         action = function()
-                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Vaults/"))
+                            Snacks.picker.explorer({ cwd = vim.fn.expand("$HOME/Stuff/Vaults/") })
                         end,
                     },
                     {
@@ -94,7 +94,7 @@ return {
                         desc = "Configure Neovim",
                         key = "c",
                         action = function()
-                            require("yazi").yazi(nil, vim.fn.expand("$HOME/.config/nvim/"))
+                            Snacks.picker.explorer({ cwd = vim.fn.expand("$HOME/.config/nvim/") })
                         end,
                     },
                     {

@@ -46,6 +46,7 @@ return {
             json = { "prettier" },
             lua = { "stylua" },
             python = { "isort", "black" },
+            scss = { "prettier" },
             shell = { "shfmt" },
             tex = { "tex-fmt" },
             toml = { "taplo" },
