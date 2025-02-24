@@ -48,6 +48,7 @@ return {
             python = { "isort", "black" },
             scss = { "prettier" },
             shell = { "shfmt" },
+            svg = { "prettier" },
             tex = { "tex-fmt" },
             toml = { "taplo" },
             yaml = { "prettier" },

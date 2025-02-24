@@ -64,7 +64,7 @@ return {
                         desc = "Open Dotfiles",
                         key = "d",
                         action = function()
-                            Snacks.picker.explorer({ cwd = vim.fn.expand("$HOME/.dotfiles/") })
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/.dotfiles/"))
                         end,
                     },
                     {
@@ -75,11 +75,18 @@ return {
                         end,
                     },
                     {
+                        key = "o",
+                        hidden = true,
+                        action = function()
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Websites/ojasb.xyz/"))
+                        end,
+                    },
+                    {
                         icon = "󰩪 ",
                         desc = "Open Vaults",
                         key = "v",
                         action = function()
-                            Snacks.picker.explorer({ cwd = vim.fn.expand("$HOME/Stuff/Vaults/") })
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Vaults/"))
                         end,
                     },
                     {
@@ -94,7 +101,7 @@ return {
                         desc = "Configure Neovim",
                         key = "c",
                         action = function()
-                            Snacks.picker.explorer({ cwd = vim.fn.expand("$HOME/.config/nvim/") })
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/.config/nvim/"))
                         end,
                     },
                     {
