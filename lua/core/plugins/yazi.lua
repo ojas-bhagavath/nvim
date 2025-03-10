@@ -3,7 +3,8 @@ return {
     event = { "VeryLazy" },
     version = "6.11.0",
     dependencies = {
-        "nvim-lua/plenary.nvim",
+        "folke/snacks.nvim",
+        lazy = true,
     },
     keys = {
         {
@@ -11,6 +12,7 @@ return {
             function()
                 require("yazi").yazi()
             end,
+            mode = { "n", "v" },
             desc = "yazi",
         },
     },
