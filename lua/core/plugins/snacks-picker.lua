@@ -13,6 +13,9 @@ return {
                     hidden = true,
                     ignored = true,
                 },
+                buffers = {
+                    current = false,
+                },
             },
             layouts = {
                 default = {
