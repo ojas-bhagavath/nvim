@@ -123,6 +123,13 @@ return {
                         key = "q",
                         action = ":qa",
                     },
+                    {
+                        key = "P",
+                        hidden = true,
+                        action = function()
+                            Snacks.picker.projects()
+                        end,
+                    },
                 },
             },
             sections = {
