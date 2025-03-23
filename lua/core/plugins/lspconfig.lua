@@ -123,7 +123,9 @@ return {
                 },
             },
             marksman = {},
-            pyright = {},
+            pyright = {
+                filetypes = { "python" },
+            },
             taplo = {},
             texlab = {},
         }
