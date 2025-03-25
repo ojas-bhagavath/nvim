@@ -22,5 +22,13 @@ return {
             mode = { "n", "t" },
             desc = "Toggle Terminal",
         },
+        {
+            "<leader>xx",
+            function()
+                Snacks.terminal.toggle("python3 " .. vim.fn.expand("%"), { cwd = vim.fn.getcwd() })
+            end,
+            mode = { "n", "t" },
+            ft = "python",
+        },
     },
 }
