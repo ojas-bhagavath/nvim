@@ -5,6 +5,13 @@ return {
     opts = {
         picker = {
             sources = {
+                buffers = {
+                    focus = "list",
+                    current = false,
+                },
+                command_history = {
+                    focus = "list",
+                },
                 explorer = {
                     hidden = true,
                     ignored = true,
@@ -12,10 +19,6 @@ return {
                 files = {
                     hidden = true,
                     ignored = true,
-                },
-                buffers = {
-                    focus = "list",
-                    current = false,
                 },
             },
             layouts = {
@@ -44,6 +47,14 @@ return {
             end,
             mode = { "n" },
             desc = "Fuzzy Find Keymaps",
+        },
+        {
+            "<leader>E",
+            function()
+                Snacks.picker.explorer()
+            end,
+            mode = { "n" },
+            desc = "Snacks Explorer",
         },
         {
             "<leader>fc",
