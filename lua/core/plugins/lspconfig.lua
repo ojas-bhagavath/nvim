@@ -6,12 +6,6 @@ return {
         { "williamboman/mason-lspconfig.nvim" },
     },
     config = function()
-        vim.diagnostic.config({
-            virtual_text = false,
-            float = {
-                source = true,
-            },
-        })
         vim.api.nvim_create_autocmd("LspProgress", {
             ---@param ev {data: {client_id: integer, params: lsp.ProgressParams}}
             callback = function(ev)
@@ -94,6 +88,11 @@ return {
         end
 
         vim.diagnostic.config({
+            virtual_text = false,
+            update_in_insert = false,
+            float = {
+                source = true,
+            },
             signs = {
                 text = {
                     [vim.diagnostic.severity.ERROR] = " ",
