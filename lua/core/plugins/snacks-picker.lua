@@ -14,6 +14,7 @@ return {
                     ignored = true,
                 },
                 buffers = {
+                    focus = "list",
                     current = false,
                 },
             },
@@ -39,11 +40,7 @@ return {
         {
             "<leader><space>",
             function()
-                Snacks.picker.buffers({
-                    on_show = function()
-                        vim.cmd.stopinsert()
-                    end,
-                })
+                Snacks.picker.buffers()
             end,
             mode = { "n" },
             desc = "Fuzzy Find Keymaps",
