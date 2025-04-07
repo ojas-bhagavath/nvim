@@ -4,7 +4,6 @@ return {
     version = "6.11.0",
     dependencies = {
         "folke/snacks.nvim",
-        lazy = true,
     },
     keys = {
         {
