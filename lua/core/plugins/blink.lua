@@ -4,6 +4,12 @@ return {
     event = { "InsertEnter", "CmdlineEnter" },
     opts = {
         cmdline = {
+            enabled = true,
+            completion = {
+                menu = {
+                    auto_show = true,
+                },
+            },
             keymap = {
                 ["<C-y>"] = { "select_and_accept", "fallback" },
                 ["<C-k>"] = { "select_prev", "fallback" },
