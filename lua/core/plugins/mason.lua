@@ -31,7 +31,7 @@ return {
             "lua-language-server",
             "marksman",
             "prettier",
-            "pyright",
+            "basedpyright",
             "shellcheck",
             "shfmt",
             "stylua",

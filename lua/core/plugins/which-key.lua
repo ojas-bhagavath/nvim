@@ -26,6 +26,7 @@ return {
             { "<leader>q", group = "sessions", icon = "" },
             { "<leader>r", group = "reload", icon = "󰑓" },
             { "<leader>s", group = "split", icon = "" },
+            { "<leader>t", group = "terminal", icon = "" },
             { "<leader>u", group = "ui" },
             { "<leader>x", group = "execute", icon = "" },
             { "<localleader>l", group = "vimtex", icon = "" },
