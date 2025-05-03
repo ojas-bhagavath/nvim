@@ -4,7 +4,7 @@ return {
     priority = 1000,
     opts = {
         scroll = {
-            enabled = false,
+            enabled = true,
         },
     },
 }
