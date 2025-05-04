@@ -31,13 +31,16 @@ return {
         {
             "<leader>tj",
             function()
-                Snacks.terminal.toggle(nil, { cwd = vim.fn.getcwd(), win = { position = "bottom" } })
+                Snacks.terminal.toggle(nil, { cwd = vim.fn.getcwd(), auto_close = false, win = { position = "bottom" } })
             end,
         },
         {
             "<leader>xx",
             function()
-                Snacks.terminal.toggle("python3 " .. vim.fn.expand("%"), { cwd = vim.fn.getcwd() })
+                Snacks.terminal.toggle(
+                    "python3 " .. vim.fn.expand("%"),
+                    { auto_close = false, cwd = vim.fn.getcwd(), win = { position = "bottom", height = 0.3 } }
+                )
             end,
             mode = { "n", "t" },
             ft = "python",
