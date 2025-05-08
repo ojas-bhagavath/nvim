@@ -1,8 +1,7 @@
+vim.g.autoformat = true
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-vim.g.autoformat = true
 vim.g.markdown_recommended_style = 0
-
 vim.opt.autochdir = true
 vim.opt.autoindent = true
 vim.opt.autoread = true
@@ -24,6 +23,7 @@ vim.opt.hlsearch = true
 vim.opt.ignorecase = true
 vim.opt.inccommand = "split"
 vim.opt.laststatus = 3
+vim.opt.linebreak = true
 vim.opt.list = true
 vim.opt.mouse = "a"
 vim.opt.number = true
