@@ -81,6 +81,14 @@ return {
             desc = "Fuzzy Find String Under Cursor",
         },
         {
+            "<leader>fh",
+            function()
+                Snacks.picker.help()
+            end,
+            mode = { "n" },
+            desc = "Fuzzy Find String Under Cursor",
+        },
+        {
             "<leader>fk",
             function()
                 Snacks.picker.keymaps()
