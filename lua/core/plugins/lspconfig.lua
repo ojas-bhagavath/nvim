@@ -126,7 +126,6 @@ return {
                 },
             },
             marksman = {},
-            qmlls = {},
             taplo = {},
             texlab = {},
         }

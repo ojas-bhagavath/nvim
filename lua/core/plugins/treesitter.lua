@@ -21,7 +21,6 @@ return {
                 "markdown",
                 "markdown_inline",
                 "python",
-                "qmljs",
                 "regex",
                 "scss",
                 "toml",
