@@ -106,6 +106,9 @@ return {
         local capabilities = vim.lsp.protocol.make_client_capabilities()
 
         local servers = {
+            basedpyright = {
+                filetypes = { "python" },
+            },
             bash_ls = {},
             cssls = {},
             html = {},
@@ -123,9 +126,7 @@ return {
                 },
             },
             marksman = {},
-            basedpyright = {
-                filetypes = { "python" },
-            },
+            qmlls = {},
             taplo = {},
             texlab = {},
         }
