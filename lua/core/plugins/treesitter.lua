@@ -16,6 +16,7 @@ return {
                 "javascript",
                 "json5",
                 "latex",
+                "ledger",
                 "lua",
                 "luadoc",
                 "markdown",
