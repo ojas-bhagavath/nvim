@@ -97,6 +97,14 @@ return {
             desc = "Fuzzy Find Keymaps",
         },
         {
+            "<leader>fn",
+            function()
+                Snacks.picker.icons()
+            end,
+            mode = { "n" },
+            desc = "Fuzzy Find NerdFont Icons",
+        },
+        {
             "<leader>fp",
             function()
                 Snacks.picker.projects()
