@@ -25,6 +25,12 @@ return {
                 inherit = true,
                 prepend_args = { "--fast" },
             },
+            ["bean-format"] = {
+                inherit = true,
+                prepend_args = {
+                    "--currency-column=72",
+                },
+            },
             ["tex-fmt"] = {
                 inherit = true,
                 prepend_args = {
@@ -39,6 +45,7 @@ return {
         },
         formatters_by_ft = {
             bash = { "shfmt" },
+            beancount = { "bean-format" },
             css = { "prettier" },
             html = { "prettier" },
             htmlhugo = { "prettier" },

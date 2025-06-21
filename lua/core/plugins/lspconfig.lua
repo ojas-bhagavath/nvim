@@ -110,6 +110,7 @@ return {
                 filetypes = { "python" },
             },
             bash_ls = {},
+            beancount = {},
             cssls = {},
             html = {},
             lean_ls = {},
