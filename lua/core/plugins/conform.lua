@@ -31,6 +31,10 @@ return {
                     "--currency-column=72",
                 },
             },
+            ["hledger-fmt"] = {
+                inherit = true,
+                prepend_args = { "--fix" },
+            },
             ["tex-fmt"] = {
                 inherit = true,
                 prepend_args = {
@@ -51,6 +55,7 @@ return {
             htmlhugo = { "prettier" },
             javascript = { "prettier" },
             json = { "prettier" },
+            ledger = { "hledger-fmt" },
             lua = { "stylua" },
             python = { "isort", "black" },
             scss = { "prettier" },
