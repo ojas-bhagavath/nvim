@@ -33,7 +33,9 @@ return {
             },
             ["hledger-fmt"] = {
                 inherit = true,
-                prepend_args = { "--fix" },
+                prepend_args = {
+                    "--fix",
+                },
             },
             ["tex-fmt"] = {
                 inherit = true,
