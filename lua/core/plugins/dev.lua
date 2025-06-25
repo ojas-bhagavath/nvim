@@ -1,5 +1,5 @@
 return {
-    dir = "/home/ojas/Stuff/Projects/hledger.nvim",
+    dir = "/home/ojas/Stuff/Projects/Lua/hledger.nvim",
     lazy = false,
     cmd = { "HledgerIAdd" },
     config = function()
