@@ -129,3 +129,12 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
         vim.diagnostic.open_float(nil, { focus = false })
     end,
 })
+
+-- set filetype automatically (temporary fix)
+vim.api.nvim_create_autocmd("BufWinEnter", {
+    callback = function(args)
+        if vim.bo[args.buf].filetype == "" then
+            vim.cmd("filetype detect")
+        end
+    end,
+})
