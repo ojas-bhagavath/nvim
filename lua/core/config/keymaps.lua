@@ -51,3 +51,5 @@ vim.keymap.set("i", ";", ";<c-g>u")
 
 -- lua
 vim.keymap.set("n", "<leader>xs", "<cmd>source %<CR>", { desc = "Source Current File" })
+
+vim.keymap.set("i", "<End>", "<C-o>$", { noremap = true, desc = "Fix an annoyance with the End button" })

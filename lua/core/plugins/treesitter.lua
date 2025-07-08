@@ -15,7 +15,6 @@ return {
                 "html",
                 "javascript",
                 "json5",
-                "latex",
                 "ledger",
                 "lua",
                 "luadoc",
@@ -30,9 +29,16 @@ return {
                 "toml",
                 "yaml",
             },
+            ignore_install = { "latex" },
             autoinstall = true,
-            highlight = { enable = true },
-            indent = { enable = true },
+            highlight = {
+                enable = true,
+                disable = { "latex" },
+            },
+            indent = {
+                enable = true,
+                disable = { "latex" },
+            },
             incremental_selection = {
                 enable = true,
                 keymaps = {
