@@ -83,17 +83,17 @@ return {
                     },
                     {
                         icon = "󰩪 ",
-                        desc = "Open Vaults",
+                        desc = "Open Notes",
                         key = "v",
                         action = function()
-                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Vaults/"))
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Notes/"))
                         end,
                     },
                     {
                         key = "V",
                         hidden = true,
                         action = function()
-                            Snacks.picker.files({ cwd = "$HOME/Stuff/Vaults/" })
+                            Snacks.picker.files({ cwd = "$HOME/Stuff/Notes/" })
                         end,
                     },
                     {
