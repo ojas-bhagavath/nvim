@@ -129,6 +129,12 @@ return {
             marksman = {},
             taplo = {},
             texlab = {},
+            ts_ls = {
+                filetypes = {
+                    "javascript",
+                    "typescript",
+                },
+            },
         }
 
         require("mason-lspconfig").setup({
