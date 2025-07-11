@@ -2,10 +2,11 @@ return {
     "obsidian-nvim/obsidian.nvim",
     version = "*",
     lazy = true,
-    event = {
-        "BufReadPre " .. vim.fn.expand("~") .. "/Stuff/Notes/*.md",
-        "BufNewFile " .. vim.fn.expand("~") .. "/Stuff/Notes/*.md",
-    },
+    filetype = { "markdown" },
+    -- event = {
+    --     "BufReadPre " .. vim.fn.expand("~") .. "/Stuff/Notes/*.md",
+    --     "BufNewFile " .. vim.fn.expand("~") .. "/Stuff/Notes/*.md",
+    -- },
     dependencies = {
         "nvim-lua/plenary.nvim",
     },
