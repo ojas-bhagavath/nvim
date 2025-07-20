@@ -4,7 +4,6 @@ return {
     priority = 1000,
     opts = {
         scratch = {
-            ft = "markdown",
             win = {
                 width = 0.8,
                 height = 0.8,
@@ -19,6 +18,13 @@ return {
                 Snacks.scratch()
             end,
             desc = "Open Scratch Buffer",
+        },
+        {
+            "<leader>,",
+            function()
+                Snacks.scratch({ ft = "markdown" })
+            end,
+            desc = "Open Scratch Markdown Buffer",
         },
         {
             "<leader>S",

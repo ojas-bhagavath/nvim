@@ -25,14 +25,66 @@ return {
         {
             "<leader>th",
             function()
-                Snacks.terminal.toggle(nil, { cwd = vim.fn.getcwd(), win = { position = "left" } })
+                Snacks.terminal.toggle(nil, {
+                    cwd = vim.fn.getcwd(),
+                    auto_close = true,
+                    win = {
+                        position = "left",
+                        height = 1,
+                        width = 0.4,
+                    },
+                })
             end,
+            mode = { "n", "t" },
+            desc = "Terminal Left",
         },
         {
             "<leader>tj",
             function()
-                Snacks.terminal.toggle(nil, { cwd = vim.fn.getcwd(), auto_close = false, win = { position = "bottom" } })
+                Snacks.terminal.toggle(nil, {
+                    cwd = vim.fn.getcwd(),
+                    auto_close = true,
+                    win = {
+                        position = "bottom",
+                        height = 0.4,
+                        width = 1,
+                    },
+                })
             end,
+            mode = { "n", "t" },
+            desc = "Terminal Bottom",
+        },
+        {
+            "<leader>tk",
+            function()
+                Snacks.terminal.toggle(nil, {
+                    cwd = vim.fn.getcwd(),
+                    auto_close = true,
+                    win = {
+                        position = "top",
+                        height = 0.4,
+                        width = 1,
+                    },
+                })
+            end,
+            mode = { "n", "t" },
+            desc = "Terminal Top",
+        },
+        {
+            "<leader>tl",
+            function()
+                Snacks.terminal.toggle(nil, {
+                    cwd = vim.fn.getcwd(),
+                    auto_close = true,
+                    win = {
+                        position = "right",
+                        height = 1,
+                        width = 0.4,
+                    },
+                })
+            end,
+            mode = { "n", "t" },
+            desc = "Terminal Right",
         },
         {
             "<leader>xx",

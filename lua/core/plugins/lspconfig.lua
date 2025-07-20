@@ -19,73 +19,76 @@ return {
                 })
             end,
         })
-        local on_attach = function(client, bufnr)
-            -- This is where a variable was first declared, or where a function is defined, etc.
-            vim.keymap.set("n", "<leader>ld", function()
-                Snacks.picker.lsp_definitions()
-            end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Definitions" })
+        vim.api.nvim_create_autocmd("LspAttach", {
+            callback = function(args)
+                local bufnr = args.buf
+                -- This is where a variable was first declared, or where a function is defined, etc.
+                vim.keymap.set("n", "<leader>ld", function()
+                    Snacks.picker.lsp_definitions()
+                end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Definitions" })
 
-            -- Find references for the word under your cursor.
-            vim.keymap.set("n", "<leader>lR", function()
-                Snacks.picker.lsp_references()
-            end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP References" })
+                -- Find references for the word under your cursor.
+                vim.keymap.set("n", "<leader>lR", function()
+                    Snacks.picker.lsp_references()
+                end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP References" })
 
-            -- Jump to the implementation of the word under your cursor.
-            --  Useful when your language has ways of declaring types without an actual implementation.
-            vim.keymap.set("n", "<leader>li", function()
-                Snacks.picker.lsp_implementations()
-            end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Implementations" })
+                -- Jump to the implementation of the word under your cursor.
+                --  Useful when your language has ways of declaring types without an actual implementation.
+                vim.keymap.set("n", "<leader>li", function()
+                    Snacks.picker.lsp_implementations()
+                end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Implementations" })
 
-            -- Jump to the type of the word under your cursor.
-            --  Useful when you're not sure what type a variable is and you want to see
-            --  the definition of its *type*, not where it was *defined*.
-            vim.keymap.set("n", "<leader>lt", function()
-                Snacks.picker.lsp_type_definitions()
-            end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Type Definition" })
+                -- Jump to the type of the word under your cursor.
+                --  Useful when you're not sure what type a variable is and you want to see
+                --  the definition of its *type*, not where it was *defined*.
+                vim.keymap.set("n", "<leader>lt", function()
+                    Snacks.picker.lsp_type_definitions()
+                end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Type Definition" })
 
-            -- Fuzzy find all the symbols in your current document.
-            --  Symbols are things like variables, functions, types, etc.
-            vim.keymap.set("n", "<leader>ls", function()
-                Snacks.picker.lsp_symbols()
-            end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Document Symbols" })
+                -- Fuzzy find all the symbols in your current document.
+                --  Symbols are things like variables, functions, types, etc.
+                vim.keymap.set("n", "<leader>ls", function()
+                    Snacks.picker.lsp_symbols()
+                end, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Document Symbols" })
 
-            -- WARN: This is not Goto Definition, this is Goto Declaration.
-            --  For example, in C this would take you to the header.
-            vim.keymap.set("n", "<leader>lD", vim.lsp.buf.declaration, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Declarations" })
+                -- WARN: This is not Goto Definition, this is Goto Declaration.
+                --  For example, in C this would take you to the header.
+                vim.keymap.set("n", "<leader>lD", vim.lsp.buf.declaration, { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Declarations" })
 
-            -- Execute a code action, usually your cursor needs to be on top of an error
-            -- or a suggestion from your LSP for this to activate.
-            vim.keymap.set(
-                { "n", "x" },
-                "<leader>ca",
-                vim.lsp.buf.code_action,
-                { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Code Actions" }
-            )
+                -- Execute a code action, usually your cursor needs to be on top of an error
+                -- or a suggestion from your LSP for this to activate.
+                vim.keymap.set(
+                    { "n", "x" },
+                    "<leader>ca",
+                    vim.lsp.buf.code_action,
+                    { noremap = true, silent = true, buffer = bufnr, desc = "Show LSP Code Actions" }
+                )
 
-            -- Rename the variable under your cursor.
-            --  Most Language Servers support renaming across files, etc.
-            vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { noremap = true, silent = true, buffer = bufnr, desc = "LSP Rename" })
+                -- Rename the variable under your cursor.
+                --  Most Language Servers support renaming across files, etc.
+                vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { noremap = true, silent = true, buffer = bufnr, desc = "LSP Rename" })
 
-            -- Display all the diagnostics in the current line in a small neat window.
-            vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float, { noremap = true, silent = true, buffer = bufnr, desc = "Show Line Diagnostics" })
+                -- Display all the diagnostics in the current line in a small neat window.
+                vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float, { noremap = true, silent = true, buffer = bufnr, desc = "Show Line Diagnostics" })
 
-            -- Fuzzy find all the diagnostics in the current buffer.
-            vim.keymap.set("n", "<leader>db", function()
-                Snacks.picker.diagnostics()
-            end, { noremap = true, silent = true, buffer = bufnr, desc = "Show Buffer Diagnostics" })
+                -- Fuzzy find all the diagnostics in the current buffer.
+                vim.keymap.set("n", "<leader>db", function()
+                    Snacks.picker.diagnostics()
+                end, { noremap = true, silent = true, buffer = bufnr, desc = "Show Buffer Diagnostics" })
 
-            -- Display the documentation of the object you  are hovering on. Pressing K in the normal mode does the same thing as well.
-            -- Just move to get rid of it, press K to enter inside the documentation window and explore there.
-            vim.keymap.set("n", "<leader>lh", vim.lsp.buf.hover, { noremap = true, silent = true, buffer = bufnr, desc = "Hovered Object Documentation" })
+                -- Display the documentation of the object you  are hovering on. Pressing K in the normal mode does the same thing as well.
+                -- Just move to get rid of it, press K to enter inside the documentation window and explore there.
+                vim.keymap.set("n", "<leader>lh", vim.lsp.buf.hover, { noremap = true, silent = true, buffer = bufnr, desc = "Hovered Object Documentation" })
 
-            -- Restart LSP.
-            vim.keymap.set(
-                "n",
-                "<leader>rl",
-                "<cmd>LspRestart<CR> | <cmd>lua Snacks.notify.info({'LSP Restarted!'},{title = 'LspConfig'})<CR>",
-                { noremap = true, silent = true, buffer = bufnr, desc = "Restart LSP" }
-            )
-        end
+                -- Restart LSP.
+                vim.keymap.set(
+                    "n",
+                    "<leader>rl",
+                    "<cmd>LspRestart<CR> | <cmd>lua Snacks.notify.info({'LSP Restarted!'},{title = 'LspConfig'})<CR>",
+                    { noremap = true, silent = true, buffer = bufnr, desc = "Restart LSP" }
+                )
+            end,
+        })
 
         vim.diagnostic.config({
             virtual_text = false,
