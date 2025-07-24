@@ -1,6 +1,9 @@
 return {
     "folke/persistence.nvim",
-    opts = {},
+    event = "BufReadPre",
+    opts = {
+        options = { "buffers", "curdir", "tabpages", "winsize", "terminal" },
+    },
     keys = {
         {
             "<leader>qS",

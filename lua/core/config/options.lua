@@ -32,7 +32,7 @@ vim.opt.pumblend = 10
 vim.opt.pumheight = 10
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 8
-vim.opt.sessionoptions = { "buffers", "curdir", "tabpages", "winsize", "help", "globals", "skiprtp", "folds" }
+vim.opt.sessionoptions = { "buffers", "curdir", "folds", "globals", "help", "skiprtp", "tabpages", "terminal", "winsize" }
 vim.opt.shiftround = true
 vim.opt.shiftwidth = 4
 vim.opt.shortmess:append({ W = true, I = true, c = true, C = true })
