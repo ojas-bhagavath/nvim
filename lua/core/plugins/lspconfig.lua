@@ -131,6 +131,12 @@ return {
             marksman = {},
             taplo = {},
             texlab = {},
+            tinymist = {
+                settings = {
+                    formatterMode = "typstyle",
+                    exportPdf = "never",
+                },
+            },
             ts_ls = {
                 filetypes = {
                     "javascript",

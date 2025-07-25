@@ -38,6 +38,7 @@ return {
             "taplo",
             "tex-fmt",
             "texlab",
+            "tinymist",
             "typescript-language-server",
         },
     },
