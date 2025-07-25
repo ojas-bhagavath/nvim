@@ -3,24 +3,26 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-        terminal = {
-            win = {
-                relative = "editor",
-                position = "float",
-                width = 0.8,
-                height = 0.8,
-                border = "rounded",
-            },
-        },
+        terminal = {},
     },
     keys = {
         {
             "<leader>\\",
             function()
-                Snacks.terminal.toggle(nil, { cwd = vim.fn.getcwd() })
+                Snacks.terminal.toggle(nil, {
+                    cwd = vim.fn.getcwd(),
+                    auto_close = true,
+                    win = {
+                        relative = "editor",
+                        position = "float",
+                        width = 0.8,
+                        height = 0.8,
+                        border = "rounded",
+                    },
+                })
             end,
             mode = { "n", "t" },
-            desc = "Toggle Terminal",
+            desc = "Terminal Float",
         },
         {
             "<leader>th",
