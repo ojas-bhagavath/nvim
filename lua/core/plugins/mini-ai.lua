@@ -1,5 +1,5 @@
 return {
-    "echasnovski/mini.ai",
+    "nvim-mini/mini.ai",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     main = "mini.ai",
     opts = {

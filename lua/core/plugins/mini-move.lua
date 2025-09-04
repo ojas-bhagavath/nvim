@@ -1,5 +1,5 @@
 return {
-    "echasnovski/mini.move",
+    "nvim-mini/mini.move",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     main = "mini.move",
     opts = {

@@ -129,6 +129,9 @@ return {
                 },
             },
             marksman = {},
+            tailwindcss = {
+                filetypes = { "html" },
+            },
             taplo = {},
             texlab = {},
             tinymist = {

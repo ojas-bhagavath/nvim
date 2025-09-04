@@ -1,5 +1,5 @@
 return {
-    "echasnovski/mini.icons",
+    "nvim-mini/mini.icons",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     main = "mini.icons",
     opts = {
