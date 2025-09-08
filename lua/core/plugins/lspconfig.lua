@@ -130,7 +130,7 @@ return {
             },
             marksman = {},
             tailwindcss = {
-                filetypes = { "html" },
+                filetypes = { "html", "htmlhugo" },
             },
             taplo = {},
             texlab = {},
