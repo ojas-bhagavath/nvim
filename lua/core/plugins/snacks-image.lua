@@ -5,6 +5,12 @@ return {
     opts = {
         image = {
             enabled = true,
+            doc = {
+                inline = false,
+                float = true,
+                max_width = 10,
+                max_height = 10,
+            },
         },
     },
 }
