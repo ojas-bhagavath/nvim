@@ -35,8 +35,8 @@ return {
             {
                 i(1, "12pt,a4paper"),
                 i(2, "report"),
-                i(3, "/home/ojas/Stuff/LaTeX/preamble.tex"),
-                i(4, "/home/ojas/Stuff/LaTeX/references.bib"),
+                i(3, "/home/ojas/Stuff/Projects/LaTeX/preamble.tex"),
+                i(4, "/home/ojas/Stuff/Projects/LaTeX/references.bib"),
                 i(5),
                 i(6, "Ojas G Bhagavath"),
                 i(7),
