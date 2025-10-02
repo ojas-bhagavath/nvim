@@ -40,6 +40,7 @@ return {
             "texlab",
             "tinymist",
             "typescript-language-server",
+            "typstyle",
         },
     },
     config = function(_, opts)

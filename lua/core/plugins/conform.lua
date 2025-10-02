@@ -65,6 +65,7 @@ return {
             svg = { "prettier" },
             tex = { "tex-fmt" },
             toml = { "taplo" },
+            typst = { "typstyle" },
             yaml = { "prettier" },
         },
         format_on_save = function(bufnr)
