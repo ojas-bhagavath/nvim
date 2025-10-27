@@ -133,13 +133,13 @@ return {
                 },
             },
             sections = {
-                -- { section = "header" },
-                {
-                    section = "terminal",
-                    cmd = "cmatrix -B -C magenta -u 10",
-                    height = 9,
-                    padding = 2,
-                },
+                { section = "header" },
+                -- {
+                --     section = "terminal",
+                --     cmd = "cmatrix -B -C magenta -u 10",
+                --     height = 10,
+                --     padding = 2,
+                -- },
                 {
                     section = "keys",
                     gap = 1,
