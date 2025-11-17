@@ -115,7 +115,6 @@ return {
             bash_ls = {},
             cssls = {},
             html = {},
-            lean_ls = {},
             lua_ls = {
                 settings = {
                     Lua = {

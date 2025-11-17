@@ -28,7 +28,6 @@ return {
             "css-lsp",
             "html-lsp",
             "isort",
-            "lean-language-server",
             "lua-language-server",
             "marksman",
             "prettier",
