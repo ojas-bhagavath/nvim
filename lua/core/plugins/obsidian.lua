@@ -11,6 +11,7 @@ return {
         "nvim-lua/plenary.nvim",
     },
     opts = {
+        legacy_commands = false,
         workspaces = {
             {
                 name = "notes",
@@ -30,7 +31,9 @@ return {
         },
         new_notes_location = "notes_subdir",
         preferred_link_style = "wiki",
-        disable_frontmatter = false,
+        frontmatter = {
+            enabled = false,
+        },
         templates = {
             folder = "extras/templates",
             date_format = "%Y%m%d-%H%M",
@@ -48,16 +51,17 @@ return {
                 insert_tag = "<C-l>",
             },
         },
-        sort_by = "modified",
-        sort_reversed = true,
-        search_max_lines = 1000,
+        search = {
+            sort_by = "modified",
+            sort_reversed = true,
+            search_max_lines = 1000,
+        },
         open_notes_in = "current",
         attachments = {
             img_folder = "extras/attachments",
             img_name_func = function()
                 return string.format("Pasted image %s", os.date("%Y%m%d%H%M%S"))
             end,
-            confirm_img_paste = true,
         },
     },
 }
