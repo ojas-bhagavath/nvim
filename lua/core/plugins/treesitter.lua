@@ -8,8 +8,30 @@ return {
         },
     },
     build = ":TSUpdate",
+    main = "nvim-treesitter.configs",
     opts = {
-        ensure_installed = {
+        ignore_install = { "latex" },
+        highlight = {
+            enable = true,
+            disable = { "latex" },
+        },
+        indent = {
+            enable = true,
+            disable = { "latex" },
+        },
+        incremental_selection = {
+            enable = true,
+            keymaps = {
+                init_selection = "<C-Space>",
+                node_incremental = "<C-Space>",
+                scope_incremental = false,
+                node_decremental = "<C-S-Space>",
+            },
+        },
+    },
+    config = function()
+        require("nvim-treesitter.install").prefer_git = true
+        require("nvim-treesitter").install({
             "bash",
             "beancount",
             "css",
@@ -29,29 +51,6 @@ return {
             "vim",
             "vimdoc",
             "yaml",
-        },
-        ignore_install = { "latex" },
-        auto_install = true,
-        highlight = {
-            enable = true,
-            disable = { "latex" },
-        },
-        indent = {
-            enable = true,
-            disable = { "latex" },
-        },
-        incremental_selection = {
-            enable = true,
-            keymaps = {
-                init_selection = "<C-Space>",
-                node_incremental = "<C-Space>",
-                scope_incremental = false,
-                node_decremental = "<C-S-Space>",
-            },
-        },
-    },
-    config = function(_, opts)
-        require("nvim-treesitter.install").prefer_git = true
-        require("nvim-treesitter").setup(opts)
+        })
     end,
 }
