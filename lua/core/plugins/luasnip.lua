@@ -41,10 +41,34 @@ return {
                 ms = require("luasnip").multi_snippet,
                 k = require("luasnip.nodes.key_indexer").new_key,
                 in_mathzone = function()
-                    return vim.fn["vimtex#syntax#in_mathzone"]() == 1
+                    local ft = vim.bo.filetype
+                    if ft == "typst" then
+                        local node = vim.treesitter.get_node()
+                        while node do
+                            if node:type() == "math" then
+                                return true
+                            end
+                            node = node:parent()
+                        end
+                        return false
+                    else
+                        return vim.fn["vimtex#syntax#in_mathzone"]() == 1
+                    end
                 end,
                 in_textzone = function()
-                    return vim.fn["vimtex#syntax#in_mathzone"]() == 0
+                    local ft = vim.bo.filetype
+                    if ft == "typst" then
+                        local node = vim.treesitter.get_node()
+                        while node do
+                            if node:type() == "math" then
+                                return false
+                            end
+                            node = node:parent()
+                        end
+                        return true
+                    else
+                        return vim.fn["vimtex#syntax#in_mathzone"]() == 0
+                    end
                 end,
             },
         })
