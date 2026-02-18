@@ -1,6 +1,6 @@
 return {
-    s({ trig = "cap", snippetType = "autosnippet" }, t("union"), { condition = in_mathzone }),
-    s({ trig = "cup", snippetType = "autosnippet" }, t("inter"), { condition = in_mathzone }),
+    s({ trig = "cap", snippetType = "autosnippet" }, t("inter"), { condition = in_mathzone }),
+    s({ trig = "cup", snippetType = "autosnippet" }, t("union"), { condition = in_mathzone }),
     s({ trig = "scup", snippetType = "autosnippet" }, t("union.sq"), { condition = in_mathzone }),
     s({ trig = "scap", snippetType = "autosnippet" }, t("inter.sq"), { condition = in_mathzone }),
 
