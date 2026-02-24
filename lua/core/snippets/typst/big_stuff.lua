@@ -68,6 +68,7 @@ return {
             fmta('mat(delim:"[",<>)', { (i(1)) }),
             fmta('mat(delim:"|",<>)', { (i(1)) }),
             fmta('mat(delim:"(",<>)', { (i(1)) }),
-        })
+        }),
+        { condition = in_mathzone }
     ),
 }
