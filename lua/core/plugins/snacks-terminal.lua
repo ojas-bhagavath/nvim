@@ -9,7 +9,7 @@ return {
         {
             "<leader>\\",
             function()
-                Snacks.terminal.toggle(nil, {
+                Snacks.terminal.focus(nil, {
                     cwd = vim.fn.getcwd(),
                     auto_close = true,
                     win = {
