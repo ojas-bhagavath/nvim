@@ -4,4 +4,5 @@ return {
     s({ trig = "inft", snippetType = "autosnippet" }, t("infinity"), { condition = in_mathzone }),
     s({ trig = "ddx", snippetType = "autosnippet" }, fmta("(d <>)/(d <>)", { i(1), i(2) }), { condition = in_mathzone }),
     s({ trig = "pdx", snippetType = "autosnippet" }, fmta("(partial <>)/(partial <>)", { i(1), i(2) }), { condition = in_mathzone }),
+    s({ trig = "langle", snippetType = "autosnippet" }, fmta("chevron.l <> chevron.r", { i(1) }), { condition = in_mathzone }),
 }
