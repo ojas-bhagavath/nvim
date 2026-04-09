@@ -28,6 +28,7 @@ return {
                 node_decremental = "<C-S-Space>",
             },
         },
+        install_dir = vim.fn.stdpath("data") .. "/site/",
     },
     config = function()
         require("nvim-treesitter.install").prefer_git = true
@@ -48,6 +49,7 @@ return {
             "regex",
             "scss",
             "toml",
+            "typst",
             "vim",
             "vimdoc",
             "yaml",
