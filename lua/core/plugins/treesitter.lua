@@ -2,6 +2,13 @@ return {
     "romus204/tree-sitter-manager.nvim",
     event = { "BufReadPost", "BufWritePost", "BufNewFile" },
     dependencies = {},
+    keys = {
+        {
+            "<leader>up",
+            "<cmd>TSManager<cr>",
+            desc = "tree-sitter-manager",
+        },
+    },
     config = function()
         require("tree-sitter-manager").setup({
             ensure_installed = {

@@ -3,7 +3,7 @@ return {
     cmd = "Mason",
     keys = {
         {
-            "<leader>cm",
+            "<leader>um",
             "<cmd>Mason<cr>",
             desc = "Mason",
         },
