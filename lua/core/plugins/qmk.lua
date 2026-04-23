@@ -1,8 +1,6 @@
 return {
     "codethread/qmk.nvim",
-    ft = "dts",
-    enabled = true,
-    event = "VeryLazy",
+    ft = { "dts" },
     opts = {
         name = "sofle",
         variant = "zmk",
