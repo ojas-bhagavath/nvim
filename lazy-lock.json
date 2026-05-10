@@ -34,7 +34,7 @@
   "tokyonight.nvim": { "branch": "main", "commit": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6" },
   "tree-sitter-manager.nvim": { "branch": "main", "commit": "59e1ba49e33e1b73bef655fd34b5e65e1465053f" },
   "typst-preview.nvim": { "branch": "master", "commit": "87db18b8d19c8b0eed399f52e4c527ce5afe4817" },
-  "undotree": { "branch": "main", "commit": "2c0a3c9488a8230213297cd573922ba6238f0c39" },
+  "undotree": { "branch": "main", "commit": "3c6e23c507a08b6fb0c3ac9ed1b10bc67b2a7b48" },
   "vim-hugo": { "branch": "master", "commit": "324fb8c7371d31701349c1192e25a0bdcf9898f8" },
   "vimtex": { "branch": "master", "commit": "97e11bd4f56d46a87f8593d6ccb27820e19c4ab0" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
