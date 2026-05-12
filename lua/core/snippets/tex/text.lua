@@ -5,4 +5,5 @@ return {
     s({ trig = "Tfae", snippetType = "autosnippet" }, t("The following are equivalent:"), { condition = in_textzone }),
     s({ trig = "wlog", snippetType = "autosnippet" }, t("without a loss of generality"), { condition = in_textzone }),
     s({ trig = "Wlog", snippetType = "autosnippet" }, t("Without a loss of generality"), { condition = in_textzone }),
+    s({ trig = "iff", snippetType = "autosnippet" }, t("if and only if"), { condition = in_textzone }),
 }
