@@ -79,7 +79,7 @@ return {
                         key = "o",
                         hidden = true,
                         action = function()
-                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Websites/ojasb.xyz/"))
+                            require("yazi").yazi(nil, vim.fn.expand("$HOME/Stuff/Projects/webdev/ojasb.xyz/"))
                         end,
                     },
                     {
@@ -94,7 +94,7 @@ return {
                         key = "V",
                         hidden = true,
                         action = function()
-                            Snacks.picker.files({ cwd = "$HOME/Stuff/Notes/" })
+                            Snacks.picker.files({ cwd = vim.fn.expand("$HOME/Stuff/Notes/") })
                         end,
                     },
                     {
@@ -109,7 +109,7 @@ return {
                         key = "C",
                         hidden = true,
                         action = function()
-                            Snacks.picker.files({ cwd = "$HOME/.config/nvim/" })
+                            Snacks.picker.files({ cwd = vim.fn.expand("$HOME/.config/nvim/") })
                         end,
                     },
                     {
