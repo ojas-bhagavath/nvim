@@ -10,9 +10,4 @@ return {
             vim.cmd("colorscheme tokyonight-moon")
         end,
     },
-    {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
-    },
 }
