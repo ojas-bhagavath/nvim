@@ -5,7 +5,7 @@
   "flash.nvim": { "branch": "main", "commit": "fcea7ff883235d9024dc41e638f164a450c14ca2" },
   "grug-far.nvim": { "branch": "main", "commit": "5506c2f59dc9ab2ed6c233585412b24d31d51521" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
-  "lean.nvim": { "branch": "main", "commit": "bf040dc5a6454ee318bf280950780d3eb5c61265" },
+  "lean.nvim": { "branch": "main", "commit": "fa0d3ba9a77e7e7ed4aacc3c3e3a4400fe5fd50b" },
   "lualine.nvim": { "branch": "master", "commit": "221ce6b2d999187044529f49da6554a92f740a96" },
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "0a695750d747db1e7e70bcf0267ef8951c95fc83" },
