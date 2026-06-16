@@ -14,7 +14,7 @@
   "mini.bracketed": { "branch": "main", "commit": "d94d51dcee625723aaaf8d38174b48522eaf9131" },
   "mini.diff": { "branch": "main", "commit": "05be51814a718e74244829754a2a900a430a8d8b" },
   "mini.hipatterns": { "branch": "main", "commit": "e25cf080aae092a651a92fa5e477f64a61adbebf" },
-  "mini.icons": { "branch": "main", "commit": "d48ad47359218d2b019034f95f601b3861180885" },
+  "mini.icons": { "branch": "main", "commit": "ac38c983aed0a2bd32a65ca3e2348e12e58ca292" },
   "mini.move": { "branch": "main", "commit": "a776027e68fe763987a0132d59877d651a7c0130" },
   "mini.operators": { "branch": "main", "commit": "d9b2f3892ad177cc141987ccfa8944cf21474f77" },
   "mini.pairs": { "branch": "main", "commit": "30cf2f01c4aaa2033db67376b9924fa2442c05d6" },
