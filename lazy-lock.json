@@ -5,7 +5,7 @@
   "flash.nvim": { "branch": "main", "commit": "fcea7ff883235d9024dc41e638f164a450c14ca2" },
   "grug-far.nvim": { "branch": "main", "commit": "c995bbacf8229dc096ec1c3d60f8531059c86c1b" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
-  "lean.nvim": { "branch": "main", "commit": "b2a473ccd12f1edb799e2758ea4a35d99664851a" },
+  "lean.nvim": { "branch": "main", "commit": "32fb8aa2edf3f172c307957dc7083e6c7f6caa7e" },
   "lualine.nvim": { "branch": "master", "commit": "221ce6b2d999187044529f49da6554a92f740a96" },
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "21c5b3ebeaa0412e28096bb0701434c51c1fbf76" },
@@ -35,7 +35,7 @@
   "typst-preview.nvim": { "branch": "master", "commit": "87db18b8d19c8b0eed399f52e4c527ce5afe4817" },
   "undotree": { "branch": "main", "commit": "02b69aed427b848c4dca483fc5e9524b6019c296" },
   "vim-hugo": { "branch": "master", "commit": "324fb8c7371d31701349c1192e25a0bdcf9898f8" },
-  "vimtex": { "branch": "master", "commit": "df8892993c1df79b96c2d237c8a0cbcbf72131da" },
+  "vimtex": { "branch": "master", "commit": "63745fa542346e0f09a496d440645ef6ff75b62c" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
   "yazi.nvim": { "branch": "main", "commit": "28ebf7eceb08ae47dbc988f0e93593c4c9f15a05" }
 }
