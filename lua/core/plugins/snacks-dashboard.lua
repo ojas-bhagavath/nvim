@@ -137,7 +137,7 @@ return {
                 -- { section = "header" },
                 {
                     section = "terminal",
-                    cmd = "cmatrix -B -C magenta -u 10",
+                    cmd = "$SHELL -c 'cmatrix -B -C magenta -u 10'",
                     height = 9,
                     padding = 2,
                 },
