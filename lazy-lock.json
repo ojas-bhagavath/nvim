@@ -36,7 +36,7 @@
   "typst-preview.nvim": { "branch": "master", "commit": "1c2e19486397be1c580b560fc50ee36abe329c46" },
   "undotree": { "branch": "main", "commit": "02b69aed427b848c4dca483fc5e9524b6019c296" },
   "vim-hugo": { "branch": "master", "commit": "324fb8c7371d31701349c1192e25a0bdcf9898f8" },
-  "vimtex": { "branch": "master", "commit": "c49ffdc34e7cec3a1a5b5befba7ca7f7b4916fee" },
+  "vimtex": { "branch": "master", "commit": "b652447a39eeb180ea103d6b39efe84e7cf74117" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" },
   "yazi.nvim": { "branch": "main", "commit": "28ebf7eceb08ae47dbc988f0e93593c4c9f15a05" }
 }
