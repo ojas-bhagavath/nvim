@@ -25,18 +25,6 @@ return {
                 inherit = true,
                 prepend_args = { "--fast" },
             },
-            ["bean-format"] = {
-                inherit = true,
-                prepend_args = {
-                    "--currency-column=72",
-                },
-            },
-            ["hledger-fmt"] = {
-                inherit = true,
-                prepend_args = {
-                    "--fix",
-                },
-            },
             ["tex-fmt"] = {
                 inherit = true,
                 prepend_args = {
