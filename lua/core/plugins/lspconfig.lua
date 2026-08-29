@@ -114,7 +114,9 @@ return {
             },
             bash_ls = {},
             cssls = {},
-            html = {},
+            html = {
+                filetypes = { "html", "htmlhugo" },
+            },
             lua_ls = {
                 settings = {
                     Lua = {
@@ -130,6 +132,13 @@ return {
             marksman = {},
             tailwindcss = {
                 filetypes = { "html", "htmlhugo" },
+                settings = {
+                    tailwindCSS = {
+                        includeLanguages = {
+                            htmlhugo = "html",
+                        },
+                    },
+                },
             },
             taplo = {},
             texlab = {},
