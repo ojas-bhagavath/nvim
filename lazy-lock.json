@@ -33,7 +33,7 @@
   "qmk.nvim": { "branch": "main", "commit": "3c804c1480991e4837514900b22b9358cfd64fa1" },
   "snacks.nvim": { "branch": "main", "commit": "882c996cf28183f4d63640de0b4c02ec886d01f2" },
   "tokyonight.nvim": { "branch": "main", "commit": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6" },
-  "tree-sitter-manager.nvim": { "branch": "main", "commit": "d93782393d7d4b48ddbdbcb0fdff6f8cb8d7043a" },
+  "tree-sitter-manager.nvim": { "branch": "main", "commit": "27cf9c8a3767b070c22f31e92451006ee2e43540" },
   "typst-preview.nvim": { "branch": "master", "commit": "1c2e19486397be1c580b560fc50ee36abe329c46" },
   "undotree": { "branch": "main", "commit": "a6a8b1a67fc6275ed343703101384eff290b70c0" },
   "vim-hugo": { "branch": "master", "commit": "324fb8c7371d31701349c1192e25a0bdcf9898f8" },
