@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "mini.nvim": {
+      "rev": "a03ad899bda446b5a81cfa99d8aeeb92241522f3",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    }
+  }
+}
